@@ -36,9 +36,10 @@
             // lbmessage
             // 
             this.lbmessage.AutoSize = true;
-            this.lbmessage.Location = new System.Drawing.Point(273, 9);
+            this.lbmessage.Location = new System.Drawing.Point(205, 7);
+            this.lbmessage.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lbmessage.Name = "lbmessage";
-            this.lbmessage.Size = new System.Drawing.Size(42, 20);
+            this.lbmessage.Size = new System.Drawing.Size(36, 17);
             this.lbmessage.TabIndex = 2;
             this.lbmessage.Text = "aaaaa";
             this.lbmessage.TextAlign = System.Drawing.ContentAlignment.TopCenter;
@@ -47,11 +48,12 @@
             // 
             // btnNoo
             // 
-            this.btnNoo.BackColor = System.Drawing.Color.Lime;
+            this.btnNoo.BackColor = System.Drawing.Color.Red;
             this.btnNoo.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnNoo.Location = new System.Drawing.Point(454, 110);
+            this.btnNoo.Location = new System.Drawing.Point(340, 89);
+            this.btnNoo.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnNoo.Name = "btnNoo";
-            this.btnNoo.Size = new System.Drawing.Size(70, 50);
+            this.btnNoo.Size = new System.Drawing.Size(52, 41);
             this.btnNoo.TabIndex = 42;
             this.btnNoo.Text = "NO";
             this.btnNoo.UseVisualStyleBackColor = false;
@@ -59,11 +61,12 @@
             // 
             // btnSI
             // 
-            this.btnSI.BackColor = System.Drawing.Color.Red;
+            this.btnSI.BackColor = System.Drawing.Color.Lime;
             this.btnSI.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnSI.Location = new System.Drawing.Point(107, 110);
+            this.btnSI.Location = new System.Drawing.Point(80, 89);
+            this.btnSI.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnSI.Name = "btnSI";
-            this.btnSI.Size = new System.Drawing.Size(70, 50);
+            this.btnSI.Size = new System.Drawing.Size(52, 41);
             this.btnSI.TabIndex = 13;
             this.btnSI.Text = "SI";
             this.btnSI.UseVisualStyleBackColor = false;
@@ -71,14 +74,14 @@
             // 
             // Confirmar
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(596, 206);
+            this.ClientSize = new System.Drawing.Size(447, 167);
             this.Controls.Add(this.btnNoo);
             this.Controls.Add(this.btnSI);
             this.Controls.Add(this.lbmessage);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
-            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "Confirmar";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Confirmación";

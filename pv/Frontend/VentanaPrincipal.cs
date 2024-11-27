@@ -93,16 +93,12 @@ namespace pv.Frontend
 
         private void btnEmpleados_Click(object sender, EventArgs e)
         {
-            CRUD_Employees ce = new CRUD_Employees();
-            ce.Show();
-            this.Hide();
+            abrirFormHoja(new CRUD_Employees());
         }
 
         private void btnReportes_Click(object sender, EventArgs e)
         {
-            VentaHecha v = new VentaHecha();
-            v.Show();
-            this.Hide();
+            abrirFormHoja(new VentaHecha());
         }
 
         private void abrirFormHoja(object formHija)
@@ -127,6 +123,11 @@ namespace pv.Frontend
         private void btnMinimizar_Click(object sender, EventArgs e)
         {
             this.WindowState = FormWindowState.Minimized;
+        }
+
+        private void pnlContedor_Paint(object sender, PaintEventArgs e)
+        {
+
         }
     }
 }

@@ -108,8 +108,6 @@ namespace pv.Frontend
                         p.update_productos(id, tbnombre.Text, double.Parse(tbprecio.Text), double.Parse(tbiva.Text), int.Parse(tbstock.Text), tbmarca.Text, tbdescripcion.Text, double.Parse(tbpeso.Text), cod);
 
                         this.Hide();
-                        CRUD_Productos ce = new CRUD_Productos();
-                        ce.Show();
                     }
                 }
                 else

@@ -35,8 +35,6 @@ namespace pv.Frontend
             {
                 pp.insert_productos(nombre, double.Parse(tbprecio.Text), double.Parse(tbiva.Text), int.Parse(tbstock.Text), marca, descripcion, double.Parse(tbprecio.Text), cod);
 
-                CRUD_Productos ce = new CRUD_Productos();
-                ce.Show();
                 this.Hide();
 
                 res = "Producto añadido.";

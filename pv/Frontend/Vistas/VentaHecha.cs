@@ -16,8 +16,6 @@ namespace pv.Frontend.Vistas
 
         private void btnback_Click(object sender, EventArgs e)
         {
-            VentanaPrincipal m = new VentanaPrincipal();
-            m.Show();
             this.Hide();
         }
 

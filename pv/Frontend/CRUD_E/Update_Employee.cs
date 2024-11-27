@@ -109,8 +109,6 @@ namespace pv.Frontend
                         ee.update_employees(id, tbname.Text, tbuser.Text, tbpass.Text, tbmail.Text, tbphone.Text);
 
                         this.Hide();
-                        CRUD_Employees ce = new CRUD_Employees();
-                        ce.Show();
                     }
                 }
                 else
@@ -126,8 +124,6 @@ namespace pv.Frontend
 
         private void btnback_Click(object sender, EventArgs e)
         {
-            CRUD_Employees ce = new CRUD_Employees();
-            ce.Show();
             this.Hide();
         }
 

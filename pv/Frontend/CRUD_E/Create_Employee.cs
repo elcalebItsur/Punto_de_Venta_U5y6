@@ -21,8 +21,6 @@ namespace pv.Frontend
                 if (confirmed)
                 {
                     this.Hide();
-                    CRUD_Employees ce = new CRUD_Employees();
-                    ce.Show();
                 }
             }
             catch (Exception ex)
@@ -109,8 +107,6 @@ namespace pv.Frontend
 
                     if (x)
                     {
-                        CRUD_Employees ce = new CRUD_Employees();
-                        ce.Show();
                         this.Hide();
                         res = "Usuario creado correctamente.";
                     }
