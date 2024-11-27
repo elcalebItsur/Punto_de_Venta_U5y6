@@ -126,9 +126,7 @@ namespace pv.Frontend
 
         private void btnback_Click(object sender, EventArgs e)
         {
-            CRUD_Productos cp = new CRUD_Productos();
             this.Hide();
-            cp.Show();
         }
         private void panel1_Paint(object sender, PaintEventArgs e)
         {

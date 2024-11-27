@@ -53,7 +53,6 @@ namespace pv.Frontend
         {
             Update_producto up = new Update_producto(id, nombre, precio.ToString("F2"), iva.ToString("F2"), stock.ToString(), marca, descripcion, peso.ToString("F3"), cod.ToString());
             up.Show();
-            this.Hide();
         }
 
         private void CRUD_Productos_Load(object sender, EventArgs e)

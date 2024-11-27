@@ -88,9 +88,7 @@ namespace pv.Frontend
 
         private void btnVenta_Click(object sender, EventArgs e)
         {
-            Vender v = new Vender();
-            v.Show();
-            this.Hide();
+            abrirFormHoja(new Vender());
         }
 
         private void btnEmpleados_Click(object sender, EventArgs e)
