@@ -98,7 +98,8 @@ namespace pv.Frontend
 
         private void btnReportes_Click(object sender, EventArgs e)
         {
-            abrirFormHoja(new VentaHecha());
+            abrirFormHoja(new Ventasx());
+            
         }
 
         private void abrirFormHoja(object formHija)
