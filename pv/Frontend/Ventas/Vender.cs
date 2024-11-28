@@ -437,5 +437,28 @@ namespace pv.Frontend.Ventas
         {
 
         }
+
+        private void btnRegresar_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                bool confirmed = Confirmar.Show("¿Estás seguro de que quieres regresar?\nUna vez hecho, no se guardarán los datos de esta venta.");
+                if (confirmed)
+                {
+                    VentanaPrincipal m = new VentanaPrincipal();
+                    m.Show();
+                    this.Hide();
+                }
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine(ex);
+            }
+        }
+
+        private void label2_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

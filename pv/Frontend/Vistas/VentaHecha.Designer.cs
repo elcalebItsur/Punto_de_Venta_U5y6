@@ -46,9 +46,9 @@
             this.panel1.Controls.Add(this.label1);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel1.Location = new System.Drawing.Point(0, 0);
-            this.panel1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panel1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(884, 511);
+            this.panel1.Size = new System.Drawing.Size(1179, 629);
             this.panel1.TabIndex = 0;
             // 
             // dtticket
@@ -57,21 +57,21 @@
             this.dtticket.AllowUserToDeleteRows = false;
             this.dtticket.BackgroundColor = System.Drawing.SystemColors.ActiveCaption;
             this.dtticket.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dtticket.Location = new System.Drawing.Point(161, 30);
-            this.dtticket.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.dtticket.Location = new System.Drawing.Point(215, 37);
+            this.dtticket.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.dtticket.Name = "dtticket";
             this.dtticket.ReadOnly = true;
             this.dtticket.RowHeadersWidth = 62;
             this.dtticket.RowTemplate.Height = 28;
-            this.dtticket.Size = new System.Drawing.Size(667, 437);
+            this.dtticket.Size = new System.Drawing.Size(889, 538);
             this.dtticket.TabIndex = 4;
             // 
             // tbid
             // 
-            this.tbid.Location = new System.Drawing.Point(47, 116);
-            this.tbid.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tbid.Location = new System.Drawing.Point(59, 120);
+            this.tbid.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tbid.Name = "tbid";
-            this.tbid.Size = new System.Drawing.Size(68, 20);
+            this.tbid.Size = new System.Drawing.Size(89, 22);
             this.tbid.TabIndex = 3;
             this.tbid.Visible = false;
             this.tbid.TextChanged += new System.EventHandler(this.tbid_TextChanged);
@@ -81,10 +81,10 @@
             this.cbopcion.FormattingEnabled = true;
             this.cbopcion.Items.AddRange(new object[] {
             "ID"});
-            this.cbopcion.Location = new System.Drawing.Point(17, 60);
-            this.cbopcion.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.cbopcion.Location = new System.Drawing.Point(23, 74);
+            this.cbopcion.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.cbopcion.Name = "cbopcion";
-            this.cbopcion.Size = new System.Drawing.Size(127, 21);
+            this.cbopcion.Size = new System.Drawing.Size(168, 24);
             this.cbopcion.TabIndex = 1;
             this.cbopcion.SelectedIndexChanged += new System.EventHandler(this.cbopcion_SelectedIndexChanged);
             // 
@@ -92,23 +92,22 @@
             // 
             this.label1.AutoSize = true;
             this.label1.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.label1.ForeColor = System.Drawing.Color.DodgerBlue;
-            this.label1.Location = new System.Drawing.Point(14, 30);
-            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label1.Font = new System.Drawing.Font("Century", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.label1.Location = new System.Drawing.Point(19, 37);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(111, 20);
+            this.label1.Size = new System.Drawing.Size(159, 28);
             this.label1.TabIndex = 0;
             this.label1.Text = "Buscar por...";
             // 
             // VentaHecha
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(884, 511);
+            this.ClientSize = new System.Drawing.Size(1179, 629);
             this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "VentaHecha";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Ventas";

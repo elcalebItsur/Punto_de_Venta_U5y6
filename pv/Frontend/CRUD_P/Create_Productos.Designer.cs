@@ -43,12 +43,12 @@
             this.tbpeso = new System.Windows.Forms.TextBox();
             this.btnback = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.tbiva = new System.Windows.Forms.TextBox();
-            this.lbliva = new System.Windows.Forms.Label();
-            this.tbcodigo = new System.Windows.Forms.TextBox();
-            this.lbcodigo = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
             this.label2 = new System.Windows.Forms.Label();
+            this.tbcodigo = new System.Windows.Forms.TextBox();
+            this.lbliva = new System.Windows.Forms.Label();
+            this.lbcodigo = new System.Windows.Forms.Label();
+            this.tbiva = new System.Windows.Forms.TextBox();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.SuspendLayout();
@@ -57,9 +57,10 @@
             // 
             this.label1.AutoSize = true;
             this.label1.BackColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label1.Location = new System.Drawing.Point(34, 67);
+            this.label1.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(30, 54);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(65, 20);
+            this.label1.Size = new System.Drawing.Size(76, 19);
             this.label1.TabIndex = 0;
             this.label1.Text = "Nombre";
             this.label1.Click += new System.EventHandler(this.label1_Click);
@@ -68,9 +69,10 @@
             // 
             this.label3.AutoSize = true;
             this.label3.BackColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label3.Location = new System.Drawing.Point(34, 391);
+            this.label3.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Location = new System.Drawing.Point(30, 348);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(45, 20);
+            this.label3.Size = new System.Drawing.Size(49, 19);
             this.label3.TabIndex = 2;
             this.label3.Text = "Peso";
             // 
@@ -78,9 +80,10 @@
             // 
             this.label4.AutoSize = true;
             this.label4.BackColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label4.Location = new System.Drawing.Point(34, 338);
+            this.label4.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.Location = new System.Drawing.Point(30, 298);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(92, 20);
+            this.label4.Size = new System.Drawing.Size(107, 19);
             this.label4.TabIndex = 3;
             this.label4.Text = "Descripción";
             this.label4.Click += new System.EventHandler(this.label4_Click);
@@ -89,9 +92,10 @@
             // 
             this.label5.AutoSize = true;
             this.label5.BackColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label5.Location = new System.Drawing.Point(34, 292);
+            this.label5.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.Location = new System.Drawing.Point(30, 254);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(53, 20);
+            this.label5.Size = new System.Drawing.Size(62, 19);
             this.label5.TabIndex = 4;
             this.label5.Text = "Marca";
             // 
@@ -99,9 +103,10 @@
             // 
             this.label6.AutoSize = true;
             this.label6.BackColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label6.Location = new System.Drawing.Point(34, 243);
+            this.label6.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.Location = new System.Drawing.Point(30, 207);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(50, 20);
+            this.label6.Size = new System.Drawing.Size(54, 19);
             this.label6.TabIndex = 5;
             this.label6.Text = "Stock";
             // 
@@ -109,19 +114,22 @@
             // 
             this.label7.AutoSize = true;
             this.label7.BackColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label7.Location = new System.Drawing.Point(34, 125);
+            this.label7.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label7.Location = new System.Drawing.Point(30, 100);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(53, 20);
+            this.label7.Size = new System.Drawing.Size(61, 19);
             this.label7.TabIndex = 6;
             this.label7.Text = "Precio";
             // 
             // btncrear
             // 
-            this.btncrear.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.btncrear.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.btncrear.Location = new System.Drawing.Point(227, 485);
+            this.btncrear.BackColor = System.Drawing.Color.Lime;
+            this.btncrear.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btncrear.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.btncrear.Location = new System.Drawing.Point(250, 448);
+            this.btncrear.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btncrear.Name = "btncrear";
-            this.btncrear.Size = new System.Drawing.Size(147, 48);
+            this.btncrear.Size = new System.Drawing.Size(131, 38);
             this.btncrear.TabIndex = 31;
             this.btncrear.Text = "Crear";
             this.btncrear.UseVisualStyleBackColor = false;
@@ -129,56 +137,68 @@
             // 
             // tbnombre
             // 
-            this.tbnombre.Location = new System.Drawing.Point(166, 64);
+            this.tbnombre.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tbnombre.Location = new System.Drawing.Point(177, 50);
+            this.tbnombre.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tbnombre.MaxLength = 40;
             this.tbnombre.Name = "tbnombre";
-            this.tbnombre.Size = new System.Drawing.Size(229, 26);
+            this.tbnombre.Size = new System.Drawing.Size(204, 26);
             this.tbnombre.TabIndex = 0;
             this.tbnombre.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             this.tbnombre.KeyUp += new System.Windows.Forms.KeyEventHandler(this.tbnombre_KeyUp);
             // 
             // tbprecio
             // 
-            this.tbprecio.Location = new System.Drawing.Point(166, 122);
+            this.tbprecio.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tbprecio.Location = new System.Drawing.Point(177, 97);
+            this.tbprecio.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tbprecio.MaxLength = 11;
             this.tbprecio.Name = "tbprecio";
-            this.tbprecio.Size = new System.Drawing.Size(229, 26);
+            this.tbprecio.Size = new System.Drawing.Size(204, 26);
             this.tbprecio.TabIndex = 33;
             this.tbprecio.KeyUp += new System.Windows.Forms.KeyEventHandler(this.tbprecio_KeyUp);
             // 
             // tbstock
             // 
-            this.tbstock.Location = new System.Drawing.Point(166, 237);
+            this.tbstock.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tbstock.Location = new System.Drawing.Point(177, 202);
+            this.tbstock.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tbstock.MaxLength = 9;
             this.tbstock.Name = "tbstock";
-            this.tbstock.Size = new System.Drawing.Size(229, 26);
+            this.tbstock.Size = new System.Drawing.Size(204, 26);
             this.tbstock.TabIndex = 34;
             this.tbstock.KeyUp += new System.Windows.Forms.KeyEventHandler(this.tbstock_KeyUp);
             // 
             // tbmarca
             // 
-            this.tbmarca.Location = new System.Drawing.Point(166, 286);
+            this.tbmarca.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tbmarca.Location = new System.Drawing.Point(177, 248);
+            this.tbmarca.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tbmarca.MaxLength = 30;
             this.tbmarca.Name = "tbmarca";
-            this.tbmarca.Size = new System.Drawing.Size(229, 26);
+            this.tbmarca.Size = new System.Drawing.Size(204, 26);
             this.tbmarca.TabIndex = 35;
             this.tbmarca.KeyUp += new System.Windows.Forms.KeyEventHandler(this.tbmarca_KeyUp);
             // 
             // tbdescripcion
             // 
-            this.tbdescripcion.Location = new System.Drawing.Point(166, 338);
+            this.tbdescripcion.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tbdescripcion.Location = new System.Drawing.Point(177, 297);
+            this.tbdescripcion.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tbdescripcion.MaxLength = 65534;
             this.tbdescripcion.Name = "tbdescripcion";
-            this.tbdescripcion.Size = new System.Drawing.Size(229, 26);
+            this.tbdescripcion.Size = new System.Drawing.Size(204, 26);
             this.tbdescripcion.TabIndex = 36;
             this.tbdescripcion.KeyUp += new System.Windows.Forms.KeyEventHandler(this.tbdescripcion_KeyUp);
             // 
             // tbpeso
             // 
-            this.tbpeso.Location = new System.Drawing.Point(166, 388);
+            this.tbpeso.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tbpeso.Location = new System.Drawing.Point(177, 341);
+            this.tbpeso.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tbpeso.MaxLength = 11;
             this.tbpeso.Name = "tbpeso";
-            this.tbpeso.Size = new System.Drawing.Size(229, 26);
+            this.tbpeso.Size = new System.Drawing.Size(204, 26);
             this.tbpeso.TabIndex = 37;
             this.tbpeso.TextChanged += new System.EventHandler(this.tbpeso_TextChanged);
             this.tbpeso.KeyUp += new System.Windows.Forms.KeyEventHandler(this.tbpeso_KeyUp);
@@ -187,9 +207,10 @@
             // 
             this.btnback.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.btnback.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.btnback.Location = new System.Drawing.Point(19, 498);
+            this.btnback.Location = new System.Drawing.Point(17, 458);
+            this.btnback.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnback.Name = "btnback";
-            this.btnback.Size = new System.Drawing.Size(109, 35);
+            this.btnback.Size = new System.Drawing.Size(97, 28);
             this.btnback.TabIndex = 38;
             this.btnback.Text = "Regresar";
             this.btnback.UseVisualStyleBackColor = false;
@@ -199,51 +220,13 @@
             // 
             this.panel1.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.panel1.Controls.Add(this.panel2);
-            this.panel1.Location = new System.Drawing.Point(-6, 2);
+            this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panel1.Location = new System.Drawing.Point(0, 0);
+            this.panel1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(496, 634);
+            this.panel1.Size = new System.Drawing.Size(494, 582);
             this.panel1.TabIndex = 39;
             this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
-            // 
-            // tbiva
-            // 
-            this.tbiva.Location = new System.Drawing.Point(166, 184);
-            this.tbiva.MaxLength = 5;
-            this.tbiva.Name = "tbiva";
-            this.tbiva.Size = new System.Drawing.Size(229, 26);
-            this.tbiva.TabIndex = 41;
-            this.tbiva.KeyUp += new System.Windows.Forms.KeyEventHandler(this.tbiva_KeyUp);
-            // 
-            // lbliva
-            // 
-            this.lbliva.AutoSize = true;
-            this.lbliva.BackColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.lbliva.Location = new System.Drawing.Point(34, 184);
-            this.lbliva.Name = "lbliva";
-            this.lbliva.Size = new System.Drawing.Size(30, 20);
-            this.lbliva.TabIndex = 40;
-            this.lbliva.Text = "Iva";
-            this.lbliva.Click += new System.EventHandler(this.label2_Click);
-            // 
-            // tbcodigo
-            // 
-            this.tbcodigo.Location = new System.Drawing.Point(166, 432);
-            this.tbcodigo.MaxLength = 13;
-            this.tbcodigo.Name = "tbcodigo";
-            this.tbcodigo.Size = new System.Drawing.Size(229, 26);
-            this.tbcodigo.TabIndex = 43;
-            this.tbcodigo.KeyUp += new System.Windows.Forms.KeyEventHandler(this.tbcodigo_KeyUp);
-            // 
-            // lbcodigo
-            // 
-            this.lbcodigo.AutoSize = true;
-            this.lbcodigo.BackColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.lbcodigo.Location = new System.Drawing.Point(34, 432);
-            this.lbcodigo.Name = "lbcodigo";
-            this.lbcodigo.Size = new System.Drawing.Size(59, 20);
-            this.lbcodigo.TabIndex = 42;
-            this.lbcodigo.Text = "Codigo";
-            this.lbcodigo.Click += new System.EventHandler(this.label2_Click_1);
             // 
             // panel2
             // 
@@ -267,9 +250,10 @@
             this.panel2.Controls.Add(this.tbiva);
             this.panel2.Controls.Add(this.label4);
             this.panel2.Controls.Add(this.tbstock);
-            this.panel2.Location = new System.Drawing.Point(51, 48);
+            this.panel2.Location = new System.Drawing.Point(33, 29);
+            this.panel2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(420, 547);
+            this.panel2.Size = new System.Drawing.Size(434, 502);
             this.panel2.TabIndex = 0;
             // 
             // label2
@@ -277,18 +261,65 @@
             this.label2.AutoSize = true;
             this.label2.BackColor = System.Drawing.SystemColors.ButtonHighlight;
             this.label2.Font = new System.Drawing.Font("Showcard Gothic", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(-7, 9);
+            this.label2.Location = new System.Drawing.Point(11, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(435, 40);
+            this.label2.Size = new System.Drawing.Size(370, 33);
             this.label2.TabIndex = 44;
             this.label2.Text = "Creación de Productos";
             // 
+            // tbcodigo
+            // 
+            this.tbcodigo.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tbcodigo.Location = new System.Drawing.Point(177, 397);
+            this.tbcodigo.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.tbcodigo.MaxLength = 13;
+            this.tbcodigo.Name = "tbcodigo";
+            this.tbcodigo.Size = new System.Drawing.Size(204, 26);
+            this.tbcodigo.TabIndex = 43;
+            this.tbcodigo.KeyUp += new System.Windows.Forms.KeyEventHandler(this.tbcodigo_KeyUp);
+            // 
+            // lbliva
+            // 
+            this.lbliva.AutoSize = true;
+            this.lbliva.BackColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.lbliva.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbliva.Location = new System.Drawing.Point(30, 147);
+            this.lbliva.Name = "lbliva";
+            this.lbliva.Size = new System.Drawing.Size(35, 19);
+            this.lbliva.TabIndex = 40;
+            this.lbliva.Text = "Iva";
+            this.lbliva.Click += new System.EventHandler(this.label2_Click);
+            // 
+            // lbcodigo
+            // 
+            this.lbcodigo.AutoSize = true;
+            this.lbcodigo.BackColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.lbcodigo.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbcodigo.Location = new System.Drawing.Point(30, 404);
+            this.lbcodigo.Name = "lbcodigo";
+            this.lbcodigo.Size = new System.Drawing.Size(70, 19);
+            this.lbcodigo.TabIndex = 42;
+            this.lbcodigo.Text = "Codigo";
+            this.lbcodigo.Click += new System.EventHandler(this.label2_Click_1);
+            // 
+            // tbiva
+            // 
+            this.tbiva.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tbiva.Location = new System.Drawing.Point(177, 146);
+            this.tbiva.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.tbiva.MaxLength = 5;
+            this.tbiva.Name = "tbiva";
+            this.tbiva.Size = new System.Drawing.Size(204, 26);
+            this.tbiva.TabIndex = 41;
+            this.tbiva.KeyUp += new System.Windows.Forms.KeyEventHandler(this.tbiva_KeyUp);
+            // 
             // Create_Productos
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(483, 615);
+            this.ClientSize = new System.Drawing.Size(494, 582);
             this.Controls.Add(this.panel1);
+            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "Create_Productos";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Crear Producto";

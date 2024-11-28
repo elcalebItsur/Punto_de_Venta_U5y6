@@ -53,9 +53,7 @@ namespace pv.Frontend
 
         private void btnticket_Click(object sender, EventArgs e)
         {
-            VentaHecha v = new VentaHecha();
-            v.Show();
-            this.Hide();
+            abrirFormHoja(new VentaHecha());    
         }
 
         private void button1_Click_1(object sender, EventArgs e)
@@ -84,22 +82,25 @@ namespace pv.Frontend
         private void btnProductos_Click(object sender, EventArgs e)
         {
             abrirFormHoja(new CRUD_Productos());
+            subMenuReportes.Visible = false;
         }
 
         private void btnVenta_Click(object sender, EventArgs e)
         {
             abrirFormHoja(new Vender());
+            subMenuReportes.Visible = false;
         }
 
         private void btnEmpleados_Click(object sender, EventArgs e)
         {
             abrirFormHoja(new CRUD_Employees());
+            subMenuReportes.Visible = false;
         }
 
         private void btnReportes_Click(object sender, EventArgs e)
         {
-            abrirFormHoja(new Ventasx());
-            
+            subMenuReportes.Visible = true;
+
         }
 
         private void abrirFormHoja(object formHija)
@@ -129,6 +130,16 @@ namespace pv.Frontend
         private void pnlContedor_Paint(object sender, PaintEventArgs e)
         {
 
+        }
+
+        private void btnrpVenta_Click(object sender, EventArgs e)
+        {
+            abrirFormHoja(new Ventasx());
+        }
+
+        private void btnrpCompra_Click(object sender, EventArgs e)
+        {
+            abrirFormHoja(new VentaHecha());
         }
     }
 }

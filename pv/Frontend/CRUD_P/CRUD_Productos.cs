@@ -42,18 +42,6 @@ namespace pv.Frontend
 
         }
 
-        private void btnagregar_Click(object sender, EventArgs e)
-        {
-            Create_Productos f = new Create_Productos();
-            f.Show();
-            
-        }
-
-        private void button1_Click(object sender, EventArgs e)
-        {
-            Update_producto up = new Update_producto(id, nombre, precio.ToString("F2"), iva.ToString("F2"), stock.ToString(), marca, descripcion, peso.ToString("F3"), cod.ToString());
-            up.Show();
-        }
 
         private void CRUD_Productos_Load(object sender, EventArgs e)
         {
@@ -77,13 +65,13 @@ namespace pv.Frontend
                     peso = Convert.ToDouble(selectedRow.Cells["Peso"].Value);
                     cod = selectedRow.Cells["Cod"].Value.ToString();
 
-                    btnborrar.Enabled = true;
-                    btneditar.Enabled = true;
+                    btnBorrarProd.Enabled = true;
+                    btnModificarProd.Enabled = true;
                 }
                 else
                 {
-                    btnborrar.Enabled = false;
-                    btneditar.Enabled = false;
+                    btnBorrarProd.Enabled = false;
+                    btnModificarProd.Enabled = false;
                 }
             }
             catch (Exception ex)
@@ -93,7 +81,36 @@ namespace pv.Frontend
 
         }
 
-        private void button1_Click_1(object sender, EventArgs e)
+        private void dgvProductos_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
+
+       
+
+        private void pictureBox2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void pictureBox3_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnAniadirProd_Click(object sender, EventArgs e)
+        {
+            Create_Productos f = new Create_Productos();
+            f.Show();
+        }
+
+        private void btnModificarProd_Click(object sender, EventArgs e)
+        {
+            Update_producto up = new Update_producto(id, nombre, precio.ToString("F2"), iva.ToString("F2"), stock.ToString(), marca, descripcion, peso.ToString("F3"), cod.ToString());
+            up.Show();
+        }
+
+        private void btnBorrarProd_Click(object sender, EventArgs e)
         {
             try
             {
@@ -111,27 +128,19 @@ namespace pv.Frontend
             }
         }
 
-        private void button1_Click_2(object sender, EventArgs e)
+        private void btnRegresar_Click(object sender, EventArgs e)
         {
+            VentanaPrincipal m = new VentanaPrincipal();
+            m.Show();
             this.Hide();
         }
 
-        private void dgvProductos_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        private void btnActualizarTabla_Click(object sender, EventArgs e)
         {
-
+            LoadData();
         }
 
-        private void pictureBox1_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void pictureBox2_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void pictureBox3_Click(object sender, EventArgs e)
+        private void label4_Click(object sender, EventArgs e)
         {
 
         }
