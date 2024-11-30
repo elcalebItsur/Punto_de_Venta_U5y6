@@ -297,7 +297,7 @@ namespace pv.Frontend.Ventas
             try
             {
                 bool aux = true;
-                if(cbpago.SelectedItem.ToString() == "Efectivo")
+                if (cbpago.SelectedItem.ToString() == "Efectivo")
                 {
                     if (!Regex.Match(tbpaga.Text, @"^\d+(\.\d{1,2})?$").Success)
                     {
@@ -315,7 +315,7 @@ namespace pv.Frontend.Ventas
                 {
                     met_pago = cbpago.SelectedItem.ToString();
                     Venta v = new Venta(met_pago, importe, subtotal, total);
-                    bool x = v.GuardarVentaConDetalles(dtventa, v);
+                    bool x = v.GuardarVentaConDetalles(dtventa, v, txtCódigoCliente.Text);
 
                     if (x)
                     {
@@ -329,9 +329,9 @@ namespace pv.Frontend.Ventas
                     }
                 }
             }
-            catch(Exception ex)
+            catch (Exception ex)
             {
-                Console.WriteLine(ex);
+                // Console.WriteLine(ex);
             }
         }
 
