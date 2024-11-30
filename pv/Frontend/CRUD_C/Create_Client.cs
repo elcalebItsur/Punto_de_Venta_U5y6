@@ -30,8 +30,6 @@ namespace pv.Frontend
                     if (result)
                     {
                         MessageBox.Show("Cliente creado correctamente.");
-                        CRUD_Clients ce = new CRUD_Clients();
-                        ce.Show();
                         this.Hide();
                     }
                     else

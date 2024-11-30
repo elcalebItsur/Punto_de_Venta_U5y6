@@ -49,8 +49,6 @@ namespace pv.Frontend
                     if (result)
                     {
                         MessageBox.Show("Cliente actualizado correctamente.");
-                        CRUD_Clients ce = new CRUD_Clients();
-                        ce.Show();
                         this.Hide();
                     }
                     else
