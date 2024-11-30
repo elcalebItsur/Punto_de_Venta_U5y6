@@ -104,6 +104,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Backend\Clients.cs" />
     <Compile Include="Backend\Connection.cs" />
     <Compile Include="Backend\Employees.cs" />
     <Compile Include="Backend\GenTicket.cs" />
