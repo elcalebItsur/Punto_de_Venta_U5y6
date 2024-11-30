@@ -31,7 +31,7 @@ namespace pv.Frontend.Vistas
                 c.OpenConnection(); // abre la conexion a la base de datos
 
                 // consulta sql para obtener las ventas del mes y anio seleccionados
-                string query = "SELECT * FROM reporte_ventas_mes_anio WHERE MONTH(fecha) = @mes and year(fecha) = @year";
+                string query = "SELECT * FROM reporte_ventas_mes WHERE MONTH(fecha) = @mes and year(fecha) = @year";
 
                 MySqlCommand cmd = new MySqlCommand(query, c.GetConnection()); // crea el comando con la consulta
                 cmd.Parameters.AddWithValue("@mes", mesSeleccionado); // agrega parametro para el mes

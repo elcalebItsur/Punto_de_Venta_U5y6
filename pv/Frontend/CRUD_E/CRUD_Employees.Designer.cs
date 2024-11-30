@@ -107,7 +107,8 @@
             // 
             this.btnActualizarTabla.BackColor = System.Drawing.Color.Yellow;
             this.btnActualizarTabla.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnActualizarTabla.Location = new System.Drawing.Point(946, 491);
+            this.btnActualizarTabla.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.btnActualizarTabla.Location = new System.Drawing.Point(946, 24);
             this.btnActualizarTabla.Name = "btnActualizarTabla";
             this.btnActualizarTabla.Size = new System.Drawing.Size(150, 37);
             this.btnActualizarTabla.TabIndex = 127;
