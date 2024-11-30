@@ -4,14 +4,14 @@ Este proyecto de punto de venta (POS) está diseñado para facilitar y gestionar
 
 ## Funcionalidades
 
-### 1. Proceso de Venta(En Proceso)
+### 1. Proceso de Venta
 - **Descripción:** Permite al usuario realizar transacciones de venta completas, gestionando el inventario de productos y generando tickets de venta automáticamente al finalizar la compra.
 - **Funciones principales:**
   - Selección de productos a vender.
   - Cálculo del total de la venta.
   - Generación y visualización de ticket para el cliente.
 
-### 2. CRUD de Productos(Completado)
+### 2. CRUD de Productos
 - **Descripción:** Los productos que se venderán se pueden crear, leer, actualizar y eliminar en esta sección.
 - **Funciones principales:**
   - Agregar nuevos productos al inventario.
@@ -19,7 +19,7 @@ Este proyecto de punto de venta (POS) está diseñado para facilitar y gestionar
   - Eliminar productos que ya no están disponibles.
   - Visualizar el inventario actual de productos.
 
-### 3. CRUD de Empleados(Completado)
+### 3. CRUD de Empleados
 - **Descripción:** Gestión del personal de la tienda, que incluye información y permisos de los empleados.
 - **Funciones principales:**
   - Registrar nuevos empleados.
@@ -27,7 +27,7 @@ Este proyecto de punto de venta (POS) está diseñado para facilitar y gestionar
   - Eliminar registros de empleados cuando ya no pertenecen al equipo.
   - Consultar el listado completo de empleados.
 
-### 4. CRUD de Clientes(No se implemento)
+### 4. CRUD de Clientes
 - **Descripción:** Facilita la administración de la base de datos de clientes, permitiendo la creación y mantenimiento de información relevante de cada cliente.
 - **Funciones principales:**
   - Crear nuevos clientes en el sistema.
@@ -35,21 +35,21 @@ Este proyecto de punto de venta (POS) está diseñado para facilitar y gestionar
   - Eliminar clientes de la base de datos.
   - Ver información detallada de cada cliente.
 
-### 5. Ticket de Venta(En Proceso)
+### 5. Ticket de Venta
 - **Descripción:** Al completar una transacción, el sistema genera un ticket de venta que puede imprimirse o enviarse digitalmente.
 - **Características:**
   - Detalle de los productos comprados (nombre, cantidad, precio).
   - Total de la compra con desglose de impuestos si aplica.
   - Fecha y hora de la transacción.
 
-### 6. Reporte de Ventas por Periodo(En Proceso)
+### 6. Reporte de Ventas por Periodo
 - **Descripción:** Generación de reportes de ventas en un rango de fechas específico.
 - **Funciones principales:**
   - Consultar ventas realizadas en periodos definidos.
   - Exportar reportes para análisis de desempeño y toma de decisiones.
   - Visualizar estadísticas de ventas diarias, semanales, mensuales, etc.
 
-## Tareas Adicionales (Pendientes)
+## Tareas Adicionales
 
 1. **CRUD de Clientes:**
    - Agregar y cambiar el CRUD de clientes para que funcione con Stored Procedures en la base de datos.
@@ -88,7 +88,7 @@ El proyecto fue desarrollado por estudiantes del **Instituto Tecnológico Nacion
 ## Tecnologías Utilizadas
 
 - **Backend:** MySQL, C#
-- **Frontend:** Interfaz de usuario desarrollada con herramientas de Visual Studio 2022 usando .NET Framework 8.7
+- **Frontend:** Interfaz de usuario desarrollada con herramientas de Visual Studio 2022 usando .NET Framework 4.8
 - **Base de Datos:** MySQL alojada en Azure
 
 ## Instalación y Configuración
