@@ -29,19 +29,6 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(VentanaPrincipal));
-            this.btnCRUDP = new System.Windows.Forms.Button();
-            this.btnCRUDE = new System.Windows.Forms.Button();
-            this.btnventasd = new System.Windows.Forms.Button();
-            this.btnvender = new System.Windows.Forms.Button();
-            this.btnticket = new System.Windows.Forms.Button();
-            this.panel1 = new System.Windows.Forms.Panel();
-            this.pictureBox7 = new System.Windows.Forms.PictureBox();
-            this.pictureBox6 = new System.Windows.Forms.PictureBox();
-            this.pictureBox5 = new System.Windows.Forms.PictureBox();
-            this.pictureBox4 = new System.Windows.Forms.PictureBox();
-            this.pictureBox3 = new System.Windows.Forms.PictureBox();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.button1 = new System.Windows.Forms.Button();
             this.BarraMenu = new System.Windows.Forms.Panel();
             this.btnMinimizar = new System.Windows.Forms.PictureBox();
@@ -73,14 +60,7 @@
             this.panel7 = new System.Windows.Forms.Panel();
             this.btnProductos = new System.Windows.Forms.Button();
             this.pnlContedor = new System.Windows.Forms.Panel();
-            this.panel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.BarraMenu.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.btnMinimizar)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnClose)).BeginInit();
@@ -93,171 +73,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox12)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox13)).BeginInit();
             this.pnlContedor.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
-            // 
-            // btnCRUDP
-            // 
-            this.btnCRUDP.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.btnCRUDP.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.btnCRUDP.Location = new System.Drawing.Point(364, 187);
-            this.btnCRUDP.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.btnCRUDP.Name = "btnCRUDP";
-            this.btnCRUDP.Size = new System.Drawing.Size(151, 34);
-            this.btnCRUDP.TabIndex = 2;
-            this.btnCRUDP.Text = "CRUD_Productos";
-            this.btnCRUDP.UseVisualStyleBackColor = false;
-            this.btnCRUDP.Click += new System.EventHandler(this.btnCRUDP_Click);
-            // 
-            // btnCRUDE
-            // 
-            this.btnCRUDE.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.btnCRUDE.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.btnCRUDE.Location = new System.Drawing.Point(84, 187);
-            this.btnCRUDE.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.btnCRUDE.Name = "btnCRUDE";
-            this.btnCRUDE.Size = new System.Drawing.Size(151, 34);
-            this.btnCRUDE.TabIndex = 3;
-            this.btnCRUDE.Text = "CRUD_Empleados";
-            this.btnCRUDE.UseVisualStyleBackColor = false;
-            this.btnCRUDE.Click += new System.EventHandler(this.btnCRUDE_Click);
-            // 
-            // btnventasd
-            // 
-            this.btnventasd.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.btnventasd.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.btnventasd.Location = new System.Drawing.Point(364, 308);
-            this.btnventasd.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.btnventasd.Name = "btnventasd";
-            this.btnventasd.Size = new System.Drawing.Size(151, 32);
-            this.btnventasd.TabIndex = 4;
-            this.btnventasd.Text = "Ventas";
-            this.btnventasd.UseVisualStyleBackColor = false;
-            this.btnventasd.Click += new System.EventHandler(this.btnventasd_Click);
-            // 
-            // btnvender
-            // 
-            this.btnvender.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.btnvender.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.btnvender.Location = new System.Drawing.Point(84, 70);
-            this.btnvender.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.btnvender.Name = "btnvender";
-            this.btnvender.Size = new System.Drawing.Size(151, 27);
-            this.btnvender.TabIndex = 5;
-            this.btnvender.Text = "Vender";
-            this.btnvender.UseVisualStyleBackColor = false;
-            this.btnvender.Click += new System.EventHandler(this.btnvender_Click);
-            // 
-            // btnticket
-            // 
-            this.btnticket.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.btnticket.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.btnticket.Location = new System.Drawing.Point(364, 70);
-            this.btnticket.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.btnticket.Name = "btnticket";
-            this.btnticket.Size = new System.Drawing.Size(151, 27);
-            this.btnticket.TabIndex = 6;
-            this.btnticket.Text = "Tickets";
-            this.btnticket.UseVisualStyleBackColor = false;
-            this.btnticket.Click += new System.EventHandler(this.btnticket_Click);
-            // 
-            // panel1
-            // 
-            this.panel1.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.panel1.Controls.Add(this.pictureBox7);
-            this.panel1.Controls.Add(this.pictureBox6);
-            this.panel1.Controls.Add(this.pictureBox5);
-            this.panel1.Controls.Add(this.pictureBox4);
-            this.panel1.Controls.Add(this.pictureBox3);
-            this.panel1.Controls.Add(this.pictureBox2);
-            this.panel1.Controls.Add(this.pictureBox1);
-            this.panel1.Controls.Add(this.btnticket);
-            this.panel1.Controls.Add(this.btnvender);
-            this.panel1.Controls.Add(this.btnCRUDP);
-            this.panel1.Controls.Add(this.btnventasd);
-            this.panel1.Controls.Add(this.btnCRUDE);
-            this.panel1.Location = new System.Drawing.Point(349, 169);
-            this.panel1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(595, 391);
-            this.panel1.TabIndex = 7;
-            // 
-            // pictureBox7
-            // 
-            this.pictureBox7.Image = global::pv.Properties.Resources._9004860_arrow_direction_left_back_icon;
-            this.pictureBox7.Location = new System.Drawing.Point(43, 271);
-            this.pictureBox7.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.pictureBox7.Name = "pictureBox7";
-            this.pictureBox7.Size = new System.Drawing.Size(60, 48);
-            this.pictureBox7.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox7.TabIndex = 14;
-            this.pictureBox7.TabStop = false;
-            this.pictureBox7.Click += new System.EventHandler(this.pictureBox7_Click);
-            // 
-            // pictureBox6
-            // 
-            this.pictureBox6.Image = global::pv.Properties.Resources._3668846_money_cash_finance_icon;
-            this.pictureBox6.Location = new System.Drawing.Point(204, 12);
-            this.pictureBox6.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.pictureBox6.Name = "pictureBox6";
-            this.pictureBox6.Size = new System.Drawing.Size(47, 34);
-            this.pictureBox6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox6.TabIndex = 13;
-            this.pictureBox6.TabStop = false;
-            // 
-            // pictureBox5
-            // 
-            this.pictureBox5.Image = global::pv.Properties.Resources._4544816_business_cash_box_comerce_delivery_shop_icon;
-            this.pictureBox5.Location = new System.Drawing.Point(103, 4);
-            this.pictureBox5.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.pictureBox5.Name = "pictureBox5";
-            this.pictureBox5.Size = new System.Drawing.Size(115, 62);
-            this.pictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox5.TabIndex = 12;
-            this.pictureBox5.TabStop = false;
-            // 
-            // pictureBox4
-            // 
-            this.pictureBox4.Image = global::pv.Properties.Resources._5120889_drink_healthy_milk_nutrition_organic_icon;
-            this.pictureBox4.Location = new System.Drawing.Point(403, 122);
-            this.pictureBox4.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.pictureBox4.Name = "pictureBox4";
-            this.pictureBox4.Size = new System.Drawing.Size(75, 62);
-            this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox4.TabIndex = 11;
-            this.pictureBox4.TabStop = false;
-            // 
-            // pictureBox3
-            // 
-            this.pictureBox3.Image = global::pv.Properties.Resources._3709745_assistance_client_customer_employee_female_icon;
-            this.pictureBox3.Location = new System.Drawing.Point(117, 122);
-            this.pictureBox3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(75, 62);
-            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox3.TabIndex = 10;
-            this.pictureBox3.TabStop = false;
-            // 
-            // pictureBox2
-            // 
-            this.pictureBox2.Image = global::pv.Properties.Resources._3339034_business_tools_receipt_page_print_ticket_icon;
-            this.pictureBox2.Location = new System.Drawing.Point(403, 4);
-            this.pictureBox2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(75, 62);
-            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox2.TabIndex = 9;
-            this.pictureBox2.TabStop = false;
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Image = global::pv.Properties.Resources._653278_coin_bitcoin_cash_currency_dollar_icon;
-            this.pictureBox1.Location = new System.Drawing.Point(403, 242);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(75, 62);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox1.TabIndex = 8;
-            this.pictureBox1.TabStop = false;
             // 
             // button1
             // 
@@ -671,15 +488,27 @@
             // 
             // pnlContedor
             // 
-            this.pnlContedor.BackColor = System.Drawing.SystemColors.ButtonFace;
-            this.pnlContedor.Controls.Add(this.panel1);
+            this.pnlContedor.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(6)))), ((int)(((byte)(9)))), ((int)(((byte)(15)))));
+            this.pnlContedor.Controls.Add(this.pictureBox1);
             this.pnlContedor.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.pnlContedor.ForeColor = System.Drawing.SystemColors.ControlDark;
             this.pnlContedor.Location = new System.Drawing.Point(297, 34);
             this.pnlContedor.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pnlContedor.Name = "pnlContedor";
             this.pnlContedor.Size = new System.Drawing.Size(1203, 686);
             this.pnlContedor.TabIndex = 324;
             this.pnlContedor.Paint += new System.Windows.Forms.PaintEventHandler(this.pnlContedor_Paint);
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
+            this.pictureBox1.Location = new System.Drawing.Point(0, 0);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(1203, 686);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox1.TabIndex = 0;
+            this.pictureBox1.TabStop = false;
             // 
             // VentanaPrincipal
             // 
@@ -694,14 +523,6 @@
             this.Name = "VentanaPrincipal";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Load += new System.EventHandler(this.main_Load);
-            this.panel1.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.BarraMenu.ResumeLayout(false);
             this.BarraMenu.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.btnMinimizar)).EndInit();
@@ -715,25 +536,13 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox12)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox13)).EndInit();
             this.pnlContedor.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
 
         }
 
         #endregion
-        private System.Windows.Forms.Button btnCRUDP;
-        private System.Windows.Forms.Button btnCRUDE;
-        private System.Windows.Forms.Button btnventasd;
-        private System.Windows.Forms.Button btnvender;
-        private System.Windows.Forms.Button btnticket;
-        private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.PictureBox pictureBox2;
-        private System.Windows.Forms.PictureBox pictureBox3;
-        private System.Windows.Forms.PictureBox pictureBox4;
-        private System.Windows.Forms.PictureBox pictureBox5;
-        private System.Windows.Forms.PictureBox pictureBox6;
-        private System.Windows.Forms.PictureBox pictureBox7;
         private System.Windows.Forms.Panel BarraMenu;
         private System.Windows.Forms.Label lblNombreMenu;
         private System.Windows.Forms.PictureBox pictureBox10;
@@ -764,5 +573,6 @@
         private System.Windows.Forms.Panel panel7;
         private System.Windows.Forms.Button btnProductos;
         private System.Windows.Forms.Panel pnlContedor;
+        private System.Windows.Forms.PictureBox pictureBox1;
     }
 }
