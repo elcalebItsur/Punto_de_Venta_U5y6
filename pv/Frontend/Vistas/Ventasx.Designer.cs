@@ -67,7 +67,7 @@ namespace pv.Frontend.Vistas
             this.dtventas.AllowUserToDeleteRows = false;
             this.dtventas.BackgroundColor = System.Drawing.SystemColors.ActiveCaption;
             this.dtventas.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dtventas.GridColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.dtventas.GridColor = System.Drawing.Color.Black;
             this.dtventas.Location = new System.Drawing.Point(84, 81);
             this.dtventas.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.dtventas.Name = "dtventas";

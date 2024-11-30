@@ -193,7 +193,7 @@
             this.btnadd.BackColor = System.Drawing.Color.Lime;
             this.btnadd.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnadd.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.btnadd.Location = new System.Drawing.Point(173, 374);
+            this.btnadd.Location = new System.Drawing.Point(227, 374);
             this.btnadd.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnadd.Name = "btnadd";
             this.btnadd.Size = new System.Drawing.Size(186, 41);

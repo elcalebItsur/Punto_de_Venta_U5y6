@@ -176,12 +176,6 @@
     <Compile Include="Frontend\Login\Ingreso.Designer.cs">
       <DependentUpon>Ingreso.cs</DependentUpon>
     </Compile>
-    <Compile Include="Frontend\logmain.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Frontend\logmain.Designer.cs">
-      <DependentUpon>logmain.cs</DependentUpon>
-    </Compile>
     <Compile Include="Frontend\VentanaPrincipal.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -264,9 +258,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Frontend\Login\Ingreso.resx">
       <DependentUpon>Ingreso.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Frontend\logmain.resx">
-      <DependentUpon>logmain.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Frontend\VentanaPrincipal.resx">
       <DependentUpon>VentanaPrincipal.cs</DependentUpon>

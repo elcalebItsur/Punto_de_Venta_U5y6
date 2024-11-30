@@ -43,7 +43,7 @@
             // 
             this.dttrimestre.BackgroundColor = System.Drawing.SystemColors.ActiveCaption;
             this.dttrimestre.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dttrimestre.GridColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.dttrimestre.GridColor = System.Drawing.Color.Black;
             this.dttrimestre.Location = new System.Drawing.Point(222, 58);
             this.dttrimestre.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.dttrimestre.Name = "dttrimestre";
