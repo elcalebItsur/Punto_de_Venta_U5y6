@@ -32,37 +32,47 @@ namespace pv.Backend
             c = new Connection();
         }
 
-        public bool GuardarVentaConDetalles(DataGridView dtVenta, Venta venta)
+
+        // metodo para guardar datos en las tablas ventas y detalles_venta
+        public bool GuardarVentaConDetalles(DataGridView dtVenta, Venta venta, string id_cliente)
         {
             bool x = false;
             MySqlTransaction transaction = null;
             try
             {
-
+                // estas son variables que se guardan en la aplicacion, usadas para no pasarlas como argumentos entre forms ni usar clases estáticas
                 var xid = Application.UserAppDataRegistry.GetValue("ID");
                 var xuser = Application.UserAppDataRegistry.GetValue("User");
                 venta.id_empleado = Convert.ToInt32(xid);
 
+                // abrimos la conexion y hacemos el begin
                 c.OpenConnection();
                 transaction = c.GetConnection().BeginTransaction();
 
-                string queryVenta = @"INSERT INTO ventas (id_empleado, importe, subtotal, total, metodo_pago, descripcion) 
-                                  VALUES (@idEmpleado, @importe, @subtotal, @total, @metodoPago, '')";
+                // esta consulta inserta los valores en la tabla ventas, preparamos la consulta, el cmd y ejecutamos la consulta
+                string queryVenta = @"INSERT INTO ventas (id_empleado, id_cliente, importe, subtotal, total, metodo_pago, descripcion) 
+                                  VALUES (@idEmpleado, @idCliente, @importe, @subtotal, @total, @metodoPago, '')";
                 int idVenta;
                 using (MySqlCommand cmdVenta = new MySqlCommand(queryVenta, c.GetConnection(), transaction))
                 {
                     cmdVenta.Parameters.AddWithValue("@idEmpleado", venta.id_empleado);
+                    cmdVenta.Parameters.AddWithValue("@idCliente", id_cliente);
                     cmdVenta.Parameters.AddWithValue("@importe", venta.importe);
                     cmdVenta.Parameters.AddWithValue("@subtotal", venta.subtotal);
                     cmdVenta.Parameters.AddWithValue("@total", venta.total);
                     cmdVenta.Parameters.AddWithValue("@metodoPago", venta.met_pago);
 
                     cmdVenta.ExecuteNonQuery();
+
+                    // guardamos el valor insertado para la siguiente consulta
                     idVenta = (int)cmdVenta.LastInsertedId;
                 }
 
+                // de toda la datagreedview, vamos a seleccionar sus filas y las vamos a insertar una a una en un for each
                 foreach (DataGridViewRow row in dtVenta.Rows)
                 {
+                    // mientras no lleguemos al final de la dgv, hacemos la consulta, preparando los valores a insertar y la consola, para 
+                    // realizar la ejecucion de la consulta
                     if (row.Cells["ID"].Value != null)
                     {
                         int idProducto = Convert.ToInt32(row.Cells["ID"].Value);
@@ -85,7 +95,10 @@ namespace pv.Backend
                     }
                 }
 
+                // solo se hace commit si no han habido problemas con ninguna de las dos consultas anteriores
                 transaction.Commit();
+
+                // se da visto bueno y se ejecuta la funcion que genera los tickets
                 x = true;
                 GenTicket g = new GenTicket();
                 g.GenerarRecibo(idVenta);
@@ -93,19 +106,23 @@ namespace pv.Backend
             }
             catch (Exception ex)
             {
+                // en caso de erroes, se hace rollback
                 transaction?.Rollback();
-                Console.WriteLine("Error al registrar la venta y los detalles: " + ex.Message);
+                //Console.WriteLine("Error al registrar la venta y los detalles: " + ex.Message);
             }
             finally
             {
+                // cerramos la conexion
                 c.CloseConnection();
             }
 
             return x;
         }
 
+        // funcion para seleccionar ventas por el mes
         public DataTable select_ventas_fecha(DateTime startDate, DateTime endDate)
         {
+            // preparamos la consulta y la tabla donde se guardaran los datos
             string query = @"
                     SELECT * from ventas
                     WHERE fecha BETWEEN @startDate AND @endDate";
@@ -113,6 +130,7 @@ namespace pv.Backend
             DataTable tabla = new DataTable();
             try
             {
+                // abrimos la conexion y le pasamos los parametros al cmd, luego ejecutamos y llenamos la tabla
                 c.OpenConnection();
                 using (var command = new MySqlCommand(query, c.GetConnection()))
                 {
@@ -125,42 +143,20 @@ namespace pv.Backend
                     }
                 }
             }
-            catch(Exception ex)
+            catch (Exception ex)
             {
-                Console.WriteLine(ex);
+                //Console.WriteLine(ex);
+            }
+            finally
+            {
+                // cerramos la conexion
+                c.CloseConnection();
             }
 
             return tabla;
         }
 
-        public DataTable select_ventas()
-        {
-            DataTable dataTable = new DataTable();
-
-            try
-            {
-                c.OpenConnection();
-
-                string query = "SELECT * FROM ventas";
-                using (MySqlCommand command = new MySqlCommand(query, c.GetConnection()))
-                {
-                    using (MySqlDataAdapter adapter = new MySqlDataAdapter(command))
-                    {
-                        adapter.Fill(dataTable);
-                    }
-                }
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show("" + ex);
-            }
-            finally
-            {
-                c.CloseConnection();
-            }
-            return dataTable;
-        }
-
+        // seleccionamos un producto por su id
         public int productos_por_venta(int folio)
         {
             try
@@ -187,5 +183,37 @@ namespace pv.Backend
             }
         }
 
+        // funcion para seleccionar todas las ventas
+        public DataTable select_ventas()
+        {
+            // datatable para guardar los datos de la consulta
+            DataTable dataTable = new DataTable();
+
+            try
+            {
+                // abrimos la conexion, y llenamos la datatable
+                c.OpenConnection();
+
+                string query = "SELECT * FROM ventas";
+                using (MySqlCommand command = new MySqlCommand(query, c.GetConnection()))
+                {
+                    using (MySqlDataAdapter adapter = new MySqlDataAdapter(command))
+                    {
+                        adapter.Fill(dataTable);
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                //MessageBox.Show("" + ex);
+            }
+            finally
+            {
+                // cerramos la conexion
+                c.CloseConnection();
+            }
+            return dataTable;
+        }
     }
 }
+

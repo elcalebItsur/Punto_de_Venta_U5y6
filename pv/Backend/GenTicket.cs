@@ -105,11 +105,11 @@ namespace pv.Backend
                         escritor.WriteLine("****************************************");
                     }
 
-                    Console.WriteLine($"Ticket generado: {archivoTxt}");
+                    //Console.WriteLine($"Ticket generado: {archivoTxt}");
                 }
                 else
                 {
-                    Console.WriteLine("No se encontró la venta especificada.");
+                    //Console.WriteLine("No se encontró la venta especificada.");
                 }
 
                 reader.Close();
@@ -118,7 +118,7 @@ namespace pv.Backend
             catch (Exception ex)
             {
                 tran?.Rollback();
-                Console.WriteLine($"Error al generar el ticket: {ex.Message}");
+                //Console.WriteLine($"Error al generar el ticket: {ex.Message}");
             }
             finally
             {
