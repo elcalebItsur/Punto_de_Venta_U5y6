@@ -391,6 +391,7 @@
             this.btnClientes.TabIndex = 27;
             this.btnClientes.Text = "Clientes";
             this.btnClientes.UseVisualStyleBackColor = false;
+            this.btnClientes.Click += new System.EventHandler(this.btnClientes_Click);
             // 
             // pictureBox9
             // 

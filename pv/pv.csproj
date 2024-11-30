@@ -116,6 +116,24 @@
     <Compile Include="Frontend\Confirmar.Designer.cs">
       <DependentUpon>Confirmar.cs</DependentUpon>
     </Compile>
+    <Compile Include="Frontend\CRUD_C\Create_Client.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frontend\CRUD_C\Create_Client.Designer.cs">
+      <DependentUpon>Create_Client.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Frontend\CRUD_C\CRUD_Clients.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frontend\CRUD_C\CRUD_Clients.Designer.cs">
+      <DependentUpon>CRUD_Clients.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Frontend\CRUD_C\Update_Client.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frontend\CRUD_C\Update_Client.Designer.cs">
+      <DependentUpon>Update_Client.cs</DependentUpon>
+    </Compile>
     <Compile Include="Frontend\CRUD_E\CRUD_Employees.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -198,6 +216,15 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Frontend\Confirmar.resx">
       <DependentUpon>Confirmar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frontend\CRUD_C\Create_Client.resx">
+      <DependentUpon>Create_Client.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frontend\CRUD_C\CRUD_Clients.resx">
+      <DependentUpon>CRUD_Clients.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frontend\CRUD_C\Update_Client.resx">
+      <DependentUpon>Update_Client.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Frontend\CRUD_E\CRUD_Employees.resx">
       <DependentUpon>CRUD_Employees.cs</DependentUpon>

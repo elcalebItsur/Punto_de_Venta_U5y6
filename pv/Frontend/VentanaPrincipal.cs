@@ -141,5 +141,11 @@ namespace pv.Frontend
         {
             abrirFormHoja(new VentaHecha());
         }
+
+        private void btnClientes_Click(object sender, EventArgs e)
+        {
+            abrirFormHoja(new CRUD_Clients());
+            subMenuReportes.Visible = false;
+        }
     }
 }

@@ -32,21 +32,21 @@
             this.dtemployees = new System.Windows.Forms.DataGridView();
             this.lblhello = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.btnActualizarTabla = new System.Windows.Forms.Button();
+            this.label4 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
+            this.btnRegresar = new System.Windows.Forms.PictureBox();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.btnBorrarEmp = new System.Windows.Forms.PictureBox();
             this.btnModificarEmp = new System.Windows.Forms.PictureBox();
             this.btnAniadir = new System.Windows.Forms.PictureBox();
-            this.label4 = new System.Windows.Forms.Label();
-            this.btnRegresar = new System.Windows.Forms.PictureBox();
-            this.btnActualizarTabla = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dtemployees)).BeginInit();
             this.panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.btnRegresar)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnBorrarEmp)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnModificarEmp)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnAniadir)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.btnRegresar)).BeginInit();
             this.SuspendLayout();
             // 
             // dtemployees
@@ -100,6 +100,30 @@
             this.panel1.TabIndex = 4;
             this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
             // 
+            // btnActualizarTabla
+            // 
+            this.btnActualizarTabla.BackColor = System.Drawing.Color.Yellow;
+            this.btnActualizarTabla.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnActualizarTabla.Location = new System.Drawing.Point(946, 491);
+            this.btnActualizarTabla.Name = "btnActualizarTabla";
+            this.btnActualizarTabla.Size = new System.Drawing.Size(150, 37);
+            this.btnActualizarTabla.TabIndex = 127;
+            this.btnActualizarTabla.Text = "Actualizar Tabla";
+            this.btnActualizarTabla.UseVisualStyleBackColor = false;
+            this.btnActualizarTabla.Click += new System.EventHandler(this.btnActualizarTabla_Click);
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.label4.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.Location = new System.Drawing.Point(36, 627);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(82, 21);
+            this.label4.TabIndex = 126;
+            this.label4.Text = "Regresar";
+            this.label4.Click += new System.EventHandler(this.label4_Click);
+            // 
             // label3
             // 
             this.label3.AutoSize = true;
@@ -110,6 +134,20 @@
             this.label3.Size = new System.Drawing.Size(83, 23);
             this.label3.TabIndex = 118;
             this.label3.Text = "Eliminar";
+            this.label3.Click += new System.EventHandler(this.label3_Click);
+            // 
+            // btnRegresar
+            // 
+            this.btnRegresar.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnRegresar.Image = ((System.Drawing.Image)(resources.GetObject("btnRegresar.Image")));
+            this.btnRegresar.Location = new System.Drawing.Point(37, 595);
+            this.btnRegresar.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnRegresar.Name = "btnRegresar";
+            this.btnRegresar.Size = new System.Drawing.Size(82, 30);
+            this.btnRegresar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.btnRegresar.TabIndex = 125;
+            this.btnRegresar.TabStop = false;
+            this.btnRegresar.Click += new System.EventHandler(this.btnRegresar_Click);
             // 
             // label2
             // 
@@ -121,6 +159,7 @@
             this.label2.Size = new System.Drawing.Size(99, 23);
             this.label2.TabIndex = 117;
             this.label2.Text = "Modificar";
+            this.label2.Click += new System.EventHandler(this.label2_Click);
             // 
             // label1
             // 
@@ -132,6 +171,7 @@
             this.label1.Size = new System.Drawing.Size(74, 23);
             this.label1.TabIndex = 116;
             this.label1.Text = "Añadir";
+            this.label1.Click += new System.EventHandler(this.label1_Click_1);
             // 
             // btnBorrarEmp
             // 
@@ -172,42 +212,6 @@
             this.btnAniadir.TabStop = false;
             this.btnAniadir.Click += new System.EventHandler(this.btnAniadir_Click);
             // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.label4.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(36, 627);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(82, 21);
-            this.label4.TabIndex = 126;
-            this.label4.Text = "Regresar";
-            // 
-            // btnRegresar
-            // 
-            this.btnRegresar.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnRegresar.Image = ((System.Drawing.Image)(resources.GetObject("btnRegresar.Image")));
-            this.btnRegresar.Location = new System.Drawing.Point(37, 595);
-            this.btnRegresar.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.btnRegresar.Name = "btnRegresar";
-            this.btnRegresar.Size = new System.Drawing.Size(82, 30);
-            this.btnRegresar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.btnRegresar.TabIndex = 125;
-            this.btnRegresar.TabStop = false;
-            this.btnRegresar.Click += new System.EventHandler(this.btnRegresar_Click);
-            // 
-            // btnActualizarTabla
-            // 
-            this.btnActualizarTabla.BackColor = System.Drawing.Color.Yellow;
-            this.btnActualizarTabla.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnActualizarTabla.Location = new System.Drawing.Point(946, 491);
-            this.btnActualizarTabla.Name = "btnActualizarTabla";
-            this.btnActualizarTabla.Size = new System.Drawing.Size(150, 37);
-            this.btnActualizarTabla.TabIndex = 127;
-            this.btnActualizarTabla.Text = "Actualizar Tabla";
-            this.btnActualizarTabla.UseVisualStyleBackColor = false;
-            this.btnActualizarTabla.Click += new System.EventHandler(this.btnActualizarTabla_Click);
-            // 
             // CRUD_Employees
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -223,10 +227,10 @@
             ((System.ComponentModel.ISupportInitialize)(this.dtemployees)).EndInit();
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.btnRegresar)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnBorrarEmp)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnModificarEmp)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnAniadir)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.btnRegresar)).EndInit();
             this.ResumeLayout(false);
 
         }

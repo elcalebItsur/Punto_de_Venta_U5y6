@@ -54,14 +54,17 @@ namespace pv.Frontend
         // cambiar de form
         private void btnback_Click(object sender, EventArgs e)
         {
-            CRUD_Clients ce = new CRUD_Clients();
-            ce.Show();
             this.Hide();
         }
 
         private void Create_Clients_Load(object sender, EventArgs e)
         {
 
+        }
+
+        private void btnRegresar_Click(object sender, EventArgs e)
+        {
+            this.Hide();
         }
     }
 }

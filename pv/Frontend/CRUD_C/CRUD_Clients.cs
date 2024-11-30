@@ -38,47 +38,6 @@ namespace pv.Frontend
                 Console.WriteLine(ex.Message);
             }
         }
-        // cambiar a crear cliente
-        private void btnadd_Click(object sender, EventArgs e)
-        {
-            Create_Clients f = new Create_Clients();
-            f.Show();
-            this.Hide();
-        }
-
-        // cambiar a actualizar cliente
-        private void btnupdate_Click(object sender, EventArgs e)
-        {
-            Update_Clients ue = new Update_Clients(id, nombre, telefono, edad, sexo);
-            ue.Show();
-            this.Hide();
-        }
-
-        // para borrar, primero salta un mensaje de confitmación, y en base a la decision, se borra o no, con el metodo deleteclient
-        private void btndelete_Click(object sender, EventArgs e)
-        {
-            try
-            {
-                bool confirmed = Confirmar.Show("¿Estás seguro de que quieres eliminar el cliente?\nUna vez hecho, no podrás deshacer la acción.");
-                if (confirmed)
-                {
-                    bool success = c.DeleteClient(id); 
-                    if (success)
-                    {
-                        MessageBox.Show("Cliente eliminado correctamente.");
-                        LoadData(); 
-                    }
-                    else
-                    {
-                        MessageBox.Show("Hubo un problema al eliminar el cliente.");
-                    }
-                }
-            }
-            catch (Exception ex)
-            {
-                Console.WriteLine(ex.Message);
-            }
-        }
 
         // evento para habilitar el boton de borrar y eliminar al presionar una celda valida
         private void dtclients_CellClick(object sender, DataGridViewCellEventArgs e)
@@ -94,13 +53,13 @@ namespace pv.Frontend
                     edad = Convert.ToInt32(selectedRow.Cells["Edad"].Value);
                     sexo = selectedRow.Cells["Sexo"].Value.ToString();
 
-                    btndelete.Enabled = true;
-                    btnupdate.Enabled = true;
+                    btnBorrarCli.Enabled = true;
+                    btnModificarCli.Enabled = true;
                 }
                 else
                 {
-                    btndelete.Enabled = false;
-                    btnupdate.Enabled = false;
+                    btnBorrarCli.Enabled = false;
+                    btnModificarCli.Enabled = false;
                 }
             }
             catch (Exception ex)
@@ -109,12 +68,53 @@ namespace pv.Frontend
             }
         }
 
-        // cambiar de vista a la principal
-        private void btnback_Click(object sender, EventArgs e)
+        private void btnRegresar_Click(object sender, EventArgs e)
         {
-            main m = new main();
+            VentanaPrincipal m = new VentanaPrincipal();
             m.Show();
             this.Hide();
+        }
+
+        private void label4_Click(object sender, EventArgs e)
+        {
+
+        }
+        // cambiar a crear cliente
+        private void btnAniadir_Click(object sender, EventArgs e)
+        {
+            Create_Clients f = new Create_Clients();
+            f.Show();
+        }
+        // cambiar a actualizar cliente
+        private void btnModificarCli_Click(object sender, EventArgs e)
+        {
+            Update_Clients ue = new Update_Clients(id, nombre, telefono, edad, sexo);
+            ue.Show();
+        }
+        // para borrar, primero salta un mensaje de confitmación, y en base a la decision, se borra o no, con el metodo deleteclient
+        private void btnBorrarCli_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                bool confirmed = Confirmar.Show("¿Estás seguro de que quieres eliminar el cliente?\nUna vez hecho, no podrás deshacer la acción.");
+                if (confirmed)
+                {
+                    bool success = c.DeleteClient(id);
+                    if (success)
+                    {
+                        MessageBox.Show("Cliente eliminado correctamente.");
+                        LoadData();
+                    }
+                    else
+                    {
+                        MessageBox.Show("Hubo un problema al eliminar el cliente.");
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine(ex.Message);
+            }
         }
     }
 }
