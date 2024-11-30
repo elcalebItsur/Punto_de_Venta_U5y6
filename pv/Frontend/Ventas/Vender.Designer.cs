@@ -39,16 +39,16 @@
             this.lblpaga = new System.Windows.Forms.Label();
             this.btnventa = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.label2 = new System.Windows.Forms.Label();
+            this.panel2 = new System.Windows.Forms.Panel();
             this.lblsubtotal = new System.Windows.Forms.Label();
             this.lblimpuestos = new System.Windows.Forms.Label();
+            this.btnRegresar = new System.Windows.Forms.PictureBox();
             this.lblcajero = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.cbpago = new System.Windows.Forms.ComboBox();
             this.tbpaga = new System.Windows.Forms.TextBox();
-            this.panel2 = new System.Windows.Forms.Panel();
-            this.label2 = new System.Windows.Forms.Label();
-            this.btnRegresar = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.dtventa)).BeginInit();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
@@ -63,14 +63,14 @@
             this.dtventa.BackgroundColor = System.Drawing.SystemColors.Control;
             this.dtventa.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dtventa.GridColor = System.Drawing.SystemColors.ActiveBorder;
-            this.dtventa.Location = new System.Drawing.Point(249, 49);
+            this.dtventa.Location = new System.Drawing.Point(276, 49);
             this.dtventa.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.dtventa.MultiSelect = false;
             this.dtventa.Name = "dtventa";
             this.dtventa.RowHeadersWidth = 62;
             this.dtventa.RowTemplate.Height = 28;
             this.dtventa.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.CellSelect;
-            this.dtventa.Size = new System.Drawing.Size(907, 484);
+            this.dtventa.Size = new System.Drawing.Size(880, 484);
             this.dtventa.TabIndex = 2;
             this.dtventa.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dtventa_CellClick);
             this.dtventa.CellValidating += new System.Windows.Forms.DataGridViewCellValidatingEventHandler(this.dtventa_CellValidating);
@@ -101,7 +101,7 @@
             // tbcod
             // 
             this.tbcod.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tbcod.Location = new System.Drawing.Point(17, 124);
+            this.tbcod.Location = new System.Drawing.Point(40, 118);
             this.tbcod.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tbcod.MaxLength = 13;
             this.tbcod.Name = "tbcod";
@@ -114,7 +114,7 @@
             this.btnadd.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
             this.btnadd.Enabled = false;
             this.btnadd.Font = new System.Drawing.Font("Century Gothic", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnadd.Location = new System.Drawing.Point(36, 164);
+            this.btnadd.Location = new System.Drawing.Point(59, 158);
             this.btnadd.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnadd.Name = "btnadd";
             this.btnadd.Size = new System.Drawing.Size(139, 40);
@@ -128,7 +128,7 @@
             this.btndelete.BackColor = System.Drawing.Color.Red;
             this.btndelete.Enabled = false;
             this.btndelete.Font = new System.Drawing.Font("Century Gothic", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btndelete.Location = new System.Drawing.Point(36, 315);
+            this.btndelete.Location = new System.Drawing.Point(59, 309);
             this.btndelete.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btndelete.Name = "btndelete";
             this.btndelete.Size = new System.Drawing.Size(139, 40);
@@ -143,7 +143,7 @@
             this.label1.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.label1.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.label1.Location = new System.Drawing.Point(12, 90);
+            this.label1.Location = new System.Drawing.Point(35, 84);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(180, 23);
             this.label1.TabIndex = 9;
@@ -153,10 +153,10 @@
             // 
             this.lblpaga.AutoSize = true;
             this.lblpaga.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.lblpaga.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblpaga.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblpaga.Location = new System.Drawing.Point(21, 25);
             this.lblpaga.Name = "lblpaga";
-            this.lblpaga.Size = new System.Drawing.Size(55, 21);
+            this.lblpaga.Size = new System.Drawing.Size(52, 19);
             this.lblpaga.TabIndex = 11;
             this.lblpaga.Text = "Paga";
             // 
@@ -165,7 +165,7 @@
             this.btnventa.BackColor = System.Drawing.Color.Lime;
             this.btnventa.Enabled = false;
             this.btnventa.Font = new System.Drawing.Font("Century Gothic", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnventa.Location = new System.Drawing.Point(36, 465);
+            this.btnventa.Location = new System.Drawing.Point(59, 459);
             this.btnventa.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnventa.Name = "btnventa";
             this.btnventa.Size = new System.Drawing.Size(139, 59);
@@ -199,32 +199,72 @@
             this.panel1.Size = new System.Drawing.Size(1181, 633);
             this.panel1.TabIndex = 14;
             // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.label2.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Location = new System.Drawing.Point(84, 594);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(82, 21);
+            this.label2.TabIndex = 126;
+            this.label2.Text = "Regresar";
+            this.label2.Click += new System.EventHandler(this.label2_Click);
+            // 
+            // panel2
+            // 
+            this.panel2.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
+            this.panel2.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.panel2.Controls.Add(this.lblpaga);
+            this.panel2.Controls.Add(this.lblsubtotal);
+            this.panel2.Controls.Add(this.lblimpuestos);
+            this.panel2.Controls.Add(this.lbltotal);
+            this.panel2.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.panel2.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.panel2.Location = new System.Drawing.Point(276, 550);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(879, 71);
+            this.panel2.TabIndex = 22;
+            // 
             // lblsubtotal
             // 
             this.lblsubtotal.AutoSize = true;
-            this.lblsubtotal.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblsubtotal.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblsubtotal.Location = new System.Drawing.Point(238, 27);
             this.lblsubtotal.Name = "lblsubtotal";
-            this.lblsubtotal.Size = new System.Drawing.Size(80, 21);
+            this.lblsubtotal.Size = new System.Drawing.Size(73, 19);
             this.lblsubtotal.TabIndex = 17;
             this.lblsubtotal.Text = "Subtotal";
             // 
             // lblimpuestos
             // 
             this.lblimpuestos.AutoSize = true;
-            this.lblimpuestos.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblimpuestos.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblimpuestos.Location = new System.Drawing.Point(444, 27);
             this.lblimpuestos.Name = "lblimpuestos";
-            this.lblimpuestos.Size = new System.Drawing.Size(95, 21);
+            this.lblimpuestos.Size = new System.Drawing.Size(93, 19);
             this.lblimpuestos.TabIndex = 18;
             this.lblimpuestos.Text = "Impuestos";
+            // 
+            // btnRegresar
+            // 
+            this.btnRegresar.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnRegresar.Image = ((System.Drawing.Image)(resources.GetObject("btnRegresar.Image")));
+            this.btnRegresar.Location = new System.Drawing.Point(85, 562);
+            this.btnRegresar.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnRegresar.Name = "btnRegresar";
+            this.btnRegresar.Size = new System.Drawing.Size(82, 30);
+            this.btnRegresar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.btnRegresar.TabIndex = 125;
+            this.btnRegresar.TabStop = false;
+            this.btnRegresar.Click += new System.EventHandler(this.btnRegresar_Click);
             // 
             // lblcajero
             // 
             this.lblcajero.AutoSize = true;
             this.lblcajero.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.lblcajero.Font = new System.Drawing.Font("Century Gothic", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblcajero.ForeColor = System.Drawing.Color.DodgerBlue;
+            this.lblcajero.ForeColor = System.Drawing.SystemColors.WindowText;
             this.lblcajero.Location = new System.Drawing.Point(23, 9);
             this.lblcajero.Name = "lblcajero";
             this.lblcajero.Size = new System.Drawing.Size(102, 29);
@@ -265,7 +305,7 @@
             "Tarjeta de Débito",
             "Transferencia Bancaria",
             "Otro"});
-            this.cbpago.Location = new System.Drawing.Point(17, 395);
+            this.cbpago.Location = new System.Drawing.Point(40, 389);
             this.cbpago.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.cbpago.Name = "cbpago";
             this.cbpago.Size = new System.Drawing.Size(175, 26);
@@ -278,7 +318,7 @@
             // 
             this.tbpaga.BackColor = System.Drawing.SystemColors.ActiveBorder;
             this.tbpaga.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tbpaga.Location = new System.Drawing.Point(16, 238);
+            this.tbpaga.Location = new System.Drawing.Point(39, 232);
             this.tbpaga.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tbpaga.MaxLength = 11;
             this.tbpaga.Name = "tbpaga";
@@ -288,45 +328,6 @@
             this.tbpaga.Visible = false;
             this.tbpaga.TextChanged += new System.EventHandler(this.tbpaga_TextChanged_1);
             this.tbpaga.Enter += new System.EventHandler(this.tbpaga_Enter);
-            // 
-            // panel2
-            // 
-            this.panel2.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
-            this.panel2.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.panel2.Controls.Add(this.lblpaga);
-            this.panel2.Controls.Add(this.lblsubtotal);
-            this.panel2.Controls.Add(this.lblimpuestos);
-            this.panel2.Controls.Add(this.lbltotal);
-            this.panel2.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.panel2.Location = new System.Drawing.Point(249, 550);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(906, 71);
-            this.panel2.TabIndex = 22;
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.label2.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(61, 600);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(82, 21);
-            this.label2.TabIndex = 126;
-            this.label2.Text = "Regresar";
-            this.label2.Click += new System.EventHandler(this.label2_Click);
-            // 
-            // btnRegresar
-            // 
-            this.btnRegresar.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnRegresar.Image = ((System.Drawing.Image)(resources.GetObject("btnRegresar.Image")));
-            this.btnRegresar.Location = new System.Drawing.Point(62, 568);
-            this.btnRegresar.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.btnRegresar.Name = "btnRegresar";
-            this.btnRegresar.Size = new System.Drawing.Size(82, 30);
-            this.btnRegresar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.btnRegresar.TabIndex = 125;
-            this.btnRegresar.TabStop = false;
-            this.btnRegresar.Click += new System.EventHandler(this.btnRegresar_Click);
             // 
             // Vender
             // 

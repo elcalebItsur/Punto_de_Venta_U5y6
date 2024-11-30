@@ -147,5 +147,23 @@ namespace pv.Frontend
             abrirFormHoja(new CRUD_Clients());
             subMenuReportes.Visible = false;
         }
+
+        private void btnVistaVentaEmpleado_Click(object sender, EventArgs e)
+        {
+            abrirFormHoja(new Ventas_empleado());
+            subMenuReportes.Visible = false;
+        }
+
+        private void btnVistaVentaMes_Click(object sender, EventArgs e)
+        {
+            abrirFormHoja(new Ventas_Mes());
+            subMenuReportes.Visible = false;
+        }
+
+        private void btnVistaVentaTriM_Click(object sender, EventArgs e)
+        {
+            abrirFormHoja(new Ventas_trimestre());
+            subMenuReportes.Visible = false;
+        }
     }
 }

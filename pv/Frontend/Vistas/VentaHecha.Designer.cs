@@ -57,6 +57,7 @@
             this.dtticket.AllowUserToDeleteRows = false;
             this.dtticket.BackgroundColor = System.Drawing.SystemColors.ActiveCaption;
             this.dtticket.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dtticket.GridColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.dtticket.Location = new System.Drawing.Point(215, 37);
             this.dtticket.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.dtticket.Name = "dtticket";

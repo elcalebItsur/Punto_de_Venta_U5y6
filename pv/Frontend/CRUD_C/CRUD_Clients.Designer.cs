@@ -19,7 +19,6 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(CRUD_Clients));
             this.dtclients = new System.Windows.Forms.DataGridView();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.f = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.btnRegresar = new System.Windows.Forms.PictureBox();
@@ -28,6 +27,7 @@
             this.btnBorrarCli = new System.Windows.Forms.PictureBox();
             this.btnModificarCli = new System.Windows.Forms.PictureBox();
             this.btnAniadir = new System.Windows.Forms.PictureBox();
+            this.f = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dtclients)).BeginInit();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.btnRegresar)).BeginInit();
@@ -38,7 +38,9 @@
             // 
             // dtclients
             // 
+            this.dtclients.BackgroundColor = System.Drawing.SystemColors.ActiveCaption;
             this.dtclients.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dtclients.GridColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.dtclients.Location = new System.Drawing.Point(56, 59);
             this.dtclients.Name = "dtclients";
             this.dtclients.RowHeadersWidth = 62;
@@ -65,16 +67,6 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(1161, 599);
             this.panel1.TabIndex = 117;
-            // 
-            // f
-            // 
-            this.f.AutoSize = true;
-            this.f.Font = new System.Drawing.Font("Century Gothic", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.f.Location = new System.Drawing.Point(48, 9);
-            this.f.Name = "f";
-            this.f.Size = new System.Drawing.Size(401, 47);
-            this.f.TabIndex = 117;
-            this.f.Text = "Gestión de Clientes";
             // 
             // label4
             // 
@@ -172,6 +164,16 @@
             this.btnAniadir.TabIndex = 127;
             this.btnAniadir.TabStop = false;
             this.btnAniadir.Click += new System.EventHandler(this.btnAniadir_Click);
+            // 
+            // f
+            // 
+            this.f.AutoSize = true;
+            this.f.Font = new System.Drawing.Font("Century Gothic", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.f.Location = new System.Drawing.Point(48, 9);
+            this.f.Name = "f";
+            this.f.Size = new System.Drawing.Size(401, 47);
+            this.f.TabIndex = 117;
+            this.f.Text = "Gestión de Clientes";
             // 
             // CRUD_Clients
             // 

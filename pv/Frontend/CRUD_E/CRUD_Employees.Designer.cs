@@ -53,7 +53,9 @@
             // 
             this.dtemployees.AllowUserToAddRows = false;
             this.dtemployees.AllowUserToDeleteRows = false;
+            this.dtemployees.BackgroundColor = System.Drawing.SystemColors.ActiveCaption;
             this.dtemployees.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dtemployees.GridColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.dtemployees.Location = new System.Drawing.Point(145, 75);
             this.dtemployees.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.dtemployees.Name = "dtemployees";
@@ -71,6 +73,7 @@
             this.lblhello.AutoSize = true;
             this.lblhello.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.lblhello.Font = new System.Drawing.Font("Century Gothic", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblhello.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.lblhello.Location = new System.Drawing.Point(201, 9);
             this.lblhello.Name = "lblhello";
             this.lblhello.Size = new System.Drawing.Size(645, 47);
@@ -117,6 +120,7 @@
             this.label4.AutoSize = true;
             this.label4.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.label4.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.label4.Location = new System.Drawing.Point(36, 627);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(82, 21);
@@ -129,6 +133,7 @@
             this.label3.AutoSize = true;
             this.label3.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.label3.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.label3.Location = new System.Drawing.Point(942, 627);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(83, 23);
@@ -154,6 +159,7 @@
             this.label2.AutoSize = true;
             this.label2.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.label2.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.label2.Location = new System.Drawing.Point(595, 627);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(99, 23);
@@ -166,6 +172,7 @@
             this.label1.AutoSize = true;
             this.label1.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.label1.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.label1.Location = new System.Drawing.Point(230, 627);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(74, 23);

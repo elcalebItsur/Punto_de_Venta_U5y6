@@ -160,5 +160,32 @@ namespace pv.Backend
             }
             return dataTable;
         }
+
+        public int productos_por_venta(int folio)
+        {
+            try
+            {
+                // aabrimos la conexion, preparamos el cmd y ejecutamos, retornamos lo que se obtenga, o un 0 (no hay id 0, sirve para verificar si existe un producto)
+                c.OpenConnection();
+
+                string query = "select detalles_productos_dv(@id)";
+                MySqlCommand cmd = new MySqlCommand(query, c.GetConnection());
+
+                cmd.Parameters.AddWithValue("@id", folio);
+                object result = cmd.ExecuteScalar();
+                return result != null ? Convert.ToInt32(result) : 0;
+            }
+            catch (Exception ex)
+            {
+                //Console.WriteLine(ex);
+                return 0;
+            }
+            finally
+            {
+                // cerramos la conexion
+                c.CloseConnection();
+            }
+        }
+
     }
 }
