@@ -366,7 +366,7 @@
             this.btnrpCompra.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnrpCompra.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnrpCompra.ForeColor = System.Drawing.Color.White;
-            this.btnrpCompra.Location = new System.Drawing.Point(0, 59);
+            this.btnrpCompra.Location = new System.Drawing.Point(6, 61);
             this.btnrpCompra.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnrpCompra.Name = "btnrpCompra";
             this.btnrpCompra.Size = new System.Drawing.Size(239, 34);
@@ -384,7 +384,7 @@
             this.btnrpVenta.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnrpVenta.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnrpVenta.ForeColor = System.Drawing.Color.White;
-            this.btnrpVenta.Location = new System.Drawing.Point(0, 0);
+            this.btnrpVenta.Location = new System.Drawing.Point(6, 2);
             this.btnrpVenta.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnrpVenta.Name = "btnrpVenta";
             this.btnrpVenta.Size = new System.Drawing.Size(239, 34);
