@@ -1,0 +1,98 @@
+# Proyecto de Punto de Venta (POS)
+
+Este proyecto de punto de venta (POS) está diseñado para facilitar y gestionar procesos de venta en una tienda o comercio. La aplicación incluye funcionalidades clave para llevar a cabo un flujo de venta eficiente y completo. Entre estas funciones se encuentran el proceso de venta, administración de productos, empleados y clientes, generación de tickets de venta y reporte de ventas por periodo.
+
+## Funcionalidades
+
+### 1. Proceso de Venta
+- **Descripción:** Permite al usuario realizar transacciones de venta completas, gestionando el inventario de productos y generando tickets de venta automáticamente al finalizar la compra.
+- **Funciones principales:**
+  - Selección de productos a vender.
+  - Cálculo del total de la venta.
+  - Generación y visualización de ticket para el cliente.
+
+### 2. CRUD de Productos
+- **Descripción:** Los productos que se venderán se pueden crear, leer, actualizar y eliminar en esta sección.
+- **Funciones principales:**
+  - Agregar nuevos productos al inventario.
+  - Modificar información de productos existentes (precio, descripción, cantidad).
+  - Eliminar productos que ya no están disponibles.
+  - Visualizar el inventario actual de productos.
+
+### 3. CRUD de Empleados
+- **Descripción:** Gestión del personal de la tienda, que incluye información y permisos de los empleados.
+- **Funciones principales:**
+  - Registrar nuevos empleados.
+  - Actualizar datos de empleados (nombre, rol, contacto).
+  - Eliminar registros de empleados cuando ya no pertenecen al equipo.
+  - Consultar el listado completo de empleados.
+
+### 4. CRUD de Clientes
+- **Descripción:** Facilita la administración de la base de datos de clientes, permitiendo la creación y mantenimiento de información relevante de cada cliente.
+- **Funciones principales:**
+  - Crear nuevos clientes en el sistema.
+  - Actualizar información de clientes (nombre, contacto, historial de compras).
+  - Eliminar clientes de la base de datos.
+  - Ver información detallada de cada cliente.
+
+### 5. Ticket de Venta
+- **Descripción:** Al completar una transacción, el sistema genera un ticket de venta que puede imprimirse o enviarse digitalmente.
+- **Características:**
+  - Detalle de los productos comprados (nombre, cantidad, precio).
+  - Total de la compra con desglose de impuestos si aplica.
+  - Fecha y hora de la transacción.
+
+### 6. Reporte de Ventas por Periodo
+- **Descripción:** Generación de reportes de ventas en un rango de fechas específico.
+- **Funciones principales:**
+  - Consultar ventas realizadas en periodos definidos.
+  - Exportar reportes para análisis de desempeño y toma de decisiones.
+  - Visualizar estadísticas de ventas diarias, semanales, mensuales, etc.
+
+## Tareas Adicionales
+
+1. **CRUD de Clientes:**
+   - Agregar y cambiar el CRUD de clientes para que funcione con Stored Procedures en la base de datos.
+   - Programar procedimientos para insertar, eliminar y actualizar clientes.
+   - El lenguaje de programación debe llamar a los procedimientos con los parámetros necesarios.
+
+2. **Generación de Ventas Aleatorias:**
+   - Crear un Stored Procedure para insertar ventas de ejemplo con datos aleatorios.
+   - El procedimiento debe recibir la cantidad de ventas a insertar y realizar las operaciones necesarias para simular ventas reales con fechas aleatorias dentro del año en curso.
+
+3. **Reportes de Ventas por Mes:**
+   - Crear una vista que genere un reporte de ventas por mes.
+
+4. **Reporte de Ventas por Empleado:**
+   - Crear una vista que genere un reporte de ventas por empleado.
+
+5. **Reporte Comparativo de Ventas por Producto:**
+   - Crear un reporte trimestral de ventas de productos durante un año.
+
+6. **Triggers de Auditoría y Validación:**
+   - Crear un trigger de auditoría que registre los cambios en la tabla de ventas (insert, update, delete).
+   - Crear un trigger para validar que los productos no tengan precios negativos y que el nombre de los productos no contenga solo espacios en blanco. Validar que los códigos de barras tengan entre 8 y 20 caracteres si están presentes.
+
+7. **Función de Contar Detalles de Venta:**
+   - Crear una función que calcule la cantidad de productos en una venta, tomando el folio como entrada.
+
+## Equipo de Desarrollo
+
+El proyecto fue desarrollado por estudiantes del **Instituto Tecnológico Nacional de México (TecNM), campus Sur de Guanajuato (ITSUR)**:
+
+- **Caleb Zacarías García** – [Instagram: @elcaleb10](https://www.instagram.com/elcaleb10)
+- **Sergio Enrique Guzmán Cornejo** – [Instagram: @quiteguzmanc](https://www.instagram.com/quiqueguzmanc)
+- **Manuel Alejandro Rico** – [Instagram: @mane075](https://www.instagram.com/mane075)
+- **Alonso Guzmán Ruiz** – *Instagram pendiente*
+
+## Tecnologías Utilizadas
+
+- **Backend:** MySQL, C#
+- **Frontend:** Interfaz de usuario desarrollada con herramientas de Visual Studio 2022 usando .NET Framework 8.7
+- **Base de Datos:** MySQL alojada en Azure
+
+## Instalación y Configuración
+
+1. Clona el repositorio del proyecto en tu máquina local:
+   ```bash
+   git clone https://github.com/elcalebItsur/PuntoDeVenta
