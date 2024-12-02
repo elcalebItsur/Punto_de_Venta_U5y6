@@ -89,6 +89,7 @@ namespace pv.Frontend
         {
             try
             {
+                string res = "";
                 this.nombre = tbnombre.Text;
                 this.precio = double.Parse(tbprecio.Text);
                 this.iva = double.Parse(tbiva.Text);
@@ -98,7 +99,7 @@ namespace pv.Frontend
                 this.peso = double.Parse(tbpeso.Text);
                 this.cod = tbcod.Text;
                 Productos p = new Productos();
-                string res = p.validar_insersion(id, nombre, precio.ToString("F2"), iva.ToString("F2"), stock.ToString(), marca, descripcion, peso.ToString("F3"), cod);
+                res = p.validar_insersion(id, nombre, precio.ToString("F2"), iva.ToString("F2"), stock.ToString(), marca, descripcion, peso.ToString("F3"), cod);
                 if (res == "OK")
                 {
                     bool confirmed = Confirmar.Show("¿Estás seguro de que quieres modificar el producto?\nUna vez hecho, no podrás deshacer los cambios.");

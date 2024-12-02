@@ -190,9 +190,9 @@ namespace pv.Backend
             }
 
             // string vacio o que tenga entre 8 y 13 caracteres
-            if (!Regex.Match(cod, @"^[a-zA-Z0-9]{8,13}$").Success && cod != "")
+            if (!Regex.Match(cod, @"^[a-zA-Z0-9]{8,20}$").Success && cod != "")
             {
-                MessageBox.Show("El código debe contener entre 8 y 13 caracteres alfanuméricos o estar vacío.");
+                return "El código debe contener entre 8 y 20 caracteres alfanuméricos o estar vacío.";
             }
 
             return "OK";
