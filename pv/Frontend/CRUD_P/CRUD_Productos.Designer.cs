@@ -40,13 +40,14 @@
             this.btnModificarProd = new System.Windows.Forms.PictureBox();
             this.btnAniadirProd = new System.Windows.Forms.PictureBox();
             this.Productos = new System.Windows.Forms.Label();
-            this.btnActualizarTabla = new System.Windows.Forms.Button();
+            this.btnRecargarVentana = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.dgvProductos)).BeginInit();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.btnRegresar)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnBorrarProd)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnModificarProd)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnAniadirProd)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btnRecargarVentana)).BeginInit();
             this.SuspendLayout();
             // 
             // dgvProductos
@@ -70,7 +71,7 @@
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.panel1.Controls.Add(this.btnActualizarTabla);
+            this.panel1.Controls.Add(this.btnRecargarVentana);
             this.panel1.Controls.Add(this.label4);
             this.panel1.Controls.Add(this.label3);
             this.panel1.Controls.Add(this.label2);
@@ -199,17 +200,16 @@
             this.Productos.Text = "Productos";
             this.Productos.Click += new System.EventHandler(this.label1_Click);
             // 
-            // btnActualizarTabla
+            // btnRecargarVentana
             // 
-            this.btnActualizarTabla.BackColor = System.Drawing.Color.Yellow;
-            this.btnActualizarTabla.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnActualizarTabla.Location = new System.Drawing.Point(953, 50);
-            this.btnActualizarTabla.Name = "btnActualizarTabla";
-            this.btnActualizarTabla.Size = new System.Drawing.Size(204, 33);
-            this.btnActualizarTabla.TabIndex = 125;
-            this.btnActualizarTabla.Text = "Actualizar Tabla";
-            this.btnActualizarTabla.UseVisualStyleBackColor = false;
-            this.btnActualizarTabla.Click += new System.EventHandler(this.btnActualizarTabla_Click);
+            this.btnRecargarVentana.Image = ((System.Drawing.Image)(resources.GetObject("btnRecargarVentana.Image")));
+            this.btnRecargarVentana.Location = new System.Drawing.Point(1118, 42);
+            this.btnRecargarVentana.Name = "btnRecargarVentana";
+            this.btnRecargarVentana.Size = new System.Drawing.Size(39, 38);
+            this.btnRecargarVentana.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.btnRecargarVentana.TabIndex = 137;
+            this.btnRecargarVentana.TabStop = false;
+            this.btnRecargarVentana.Click += new System.EventHandler(this.btnRecargarVentana_Click);
             // 
             // CRUD_Productos
             // 
@@ -230,6 +230,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.btnBorrarProd)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnModificarProd)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnAniadirProd)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btnRecargarVentana)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -247,6 +248,6 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.Button btnActualizarTabla;
+        private System.Windows.Forms.PictureBox btnRecargarVentana;
     }
 }

@@ -32,7 +32,7 @@
             this.dtemployees = new System.Windows.Forms.DataGridView();
             this.lblhello = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.btnActualizarTabla = new System.Windows.Forms.Button();
+            this.btnRecargarVentana = new System.Windows.Forms.PictureBox();
             this.label4 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.btnRegresar = new System.Windows.Forms.PictureBox();
@@ -43,6 +43,7 @@
             this.btnAniadir = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.dtemployees)).BeginInit();
             this.panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.btnRecargarVentana)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnRegresar)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnBorrarEmp)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnModificarEmp)).BeginInit();
@@ -55,7 +56,7 @@
             this.dtemployees.AllowUserToDeleteRows = false;
             this.dtemployees.BackgroundColor = System.Drawing.SystemColors.ActiveCaption;
             this.dtemployees.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dtemployees.GridColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.dtemployees.GridColor = System.Drawing.Color.Black;
             this.dtemployees.Location = new System.Drawing.Point(145, 75);
             this.dtemployees.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.dtemployees.Name = "dtemployees";
@@ -84,7 +85,7 @@
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.panel1.Controls.Add(this.btnActualizarTabla);
+            this.panel1.Controls.Add(this.btnRecargarVentana);
             this.panel1.Controls.Add(this.label4);
             this.panel1.Controls.Add(this.label3);
             this.panel1.Controls.Add(this.btnRegresar);
@@ -96,6 +97,7 @@
             this.panel1.Controls.Add(this.lblhello);
             this.panel1.Controls.Add(this.dtemployees);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panel1.ForeColor = System.Drawing.Color.Black;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panel1.Name = "panel1";
@@ -103,18 +105,16 @@
             this.panel1.TabIndex = 4;
             this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
             // 
-            // btnActualizarTabla
+            // btnRecargarVentana
             // 
-            this.btnActualizarTabla.BackColor = System.Drawing.Color.Yellow;
-            this.btnActualizarTabla.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnActualizarTabla.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.btnActualizarTabla.Location = new System.Drawing.Point(946, 24);
-            this.btnActualizarTabla.Name = "btnActualizarTabla";
-            this.btnActualizarTabla.Size = new System.Drawing.Size(150, 37);
-            this.btnActualizarTabla.TabIndex = 127;
-            this.btnActualizarTabla.Text = "Actualizar Tabla";
-            this.btnActualizarTabla.UseVisualStyleBackColor = false;
-            this.btnActualizarTabla.Click += new System.EventHandler(this.btnActualizarTabla_Click);
+            this.btnRecargarVentana.Image = ((System.Drawing.Image)(resources.GetObject("btnRecargarVentana.Image")));
+            this.btnRecargarVentana.Location = new System.Drawing.Point(1057, 32);
+            this.btnRecargarVentana.Name = "btnRecargarVentana";
+            this.btnRecargarVentana.Size = new System.Drawing.Size(39, 38);
+            this.btnRecargarVentana.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.btnRecargarVentana.TabIndex = 136;
+            this.btnRecargarVentana.TabStop = false;
+            this.btnRecargarVentana.Click += new System.EventHandler(this.btnRecargarVentana_Click);
             // 
             // label4
             // 
@@ -235,6 +235,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.dtemployees)).EndInit();
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.btnRecargarVentana)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnRegresar)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnBorrarEmp)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnModificarEmp)).EndInit();
@@ -255,7 +256,7 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.PictureBox btnRegresar;
-        private System.Windows.Forms.Button btnActualizarTabla;
+        private System.Windows.Forms.PictureBox btnRecargarVentana;
     }
 }
 

@@ -39,6 +39,8 @@
             this.lblpaga = new System.Windows.Forms.Label();
             this.btnventa = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.label3 = new System.Windows.Forms.Label();
+            this.txtCódigoCliente = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
             this.lblsubtotal = new System.Windows.Forms.Label();
@@ -49,8 +51,6 @@
             this.label4 = new System.Windows.Forms.Label();
             this.cbpago = new System.Windows.Forms.ComboBox();
             this.tbpaga = new System.Windows.Forms.TextBox();
-            this.txtCódigoCliente = new System.Windows.Forms.TextBox();
-            this.label3 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dtventa)).BeginInit();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
@@ -64,7 +64,7 @@
             this.dtventa.AllowUserToOrderColumns = true;
             this.dtventa.BackgroundColor = System.Drawing.SystemColors.Control;
             this.dtventa.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dtventa.GridColor = System.Drawing.SystemColors.ActiveBorder;
+            this.dtventa.GridColor = System.Drawing.Color.Black;
             this.dtventa.Location = new System.Drawing.Point(276, 49);
             this.dtventa.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.dtventa.MultiSelect = false;
@@ -115,7 +115,7 @@
             // 
             this.btnadd.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
             this.btnadd.Enabled = false;
-            this.btnadd.Font = new System.Drawing.Font("Century Gothic", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnadd.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnadd.Location = new System.Drawing.Point(59, 158);
             this.btnadd.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnadd.Name = "btnadd";
@@ -129,7 +129,7 @@
             // 
             this.btndelete.BackColor = System.Drawing.Color.Red;
             this.btndelete.Enabled = false;
-            this.btndelete.Font = new System.Drawing.Font("Century Gothic", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btndelete.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btndelete.Location = new System.Drawing.Point(59, 264);
             this.btndelete.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btndelete.Name = "btndelete";
@@ -166,7 +166,7 @@
             // 
             this.btnventa.BackColor = System.Drawing.Color.Lime;
             this.btnventa.Enabled = false;
-            this.btnventa.Font = new System.Drawing.Font("Century Gothic", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnventa.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnventa.Location = new System.Drawing.Point(59, 474);
             this.btnventa.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnventa.Name = "btnventa";
@@ -197,11 +197,34 @@
             this.panel1.Controls.Add(this.tbpaga);
             this.panel1.Controls.Add(this.btnventa);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panel1.ForeColor = System.Drawing.Color.Black;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(1181, 633);
             this.panel1.TabIndex = 14;
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.label3.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.label3.Location = new System.Drawing.Point(48, 423);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(166, 19);
+            this.label3.TabIndex = 128;
+            this.label3.Text = "Codigo del cliente:";
+            // 
+            // txtCódigoCliente
+            // 
+            this.txtCódigoCliente.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtCódigoCliente.Location = new System.Drawing.Point(40, 444);
+            this.txtCódigoCliente.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.txtCódigoCliente.MaxLength = 13;
+            this.txtCódigoCliente.Name = "txtCódigoCliente";
+            this.txtCódigoCliente.Size = new System.Drawing.Size(175, 26);
+            this.txtCódigoCliente.TabIndex = 127;
             // 
             // label2
             // 
@@ -332,28 +355,6 @@
             this.tbpaga.Visible = false;
             this.tbpaga.TextChanged += new System.EventHandler(this.tbpaga_TextChanged_1);
             this.tbpaga.Enter += new System.EventHandler(this.tbpaga_Enter);
-            // 
-            // txtCódigoCliente
-            // 
-            this.txtCódigoCliente.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtCódigoCliente.Location = new System.Drawing.Point(40, 444);
-            this.txtCódigoCliente.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.txtCódigoCliente.MaxLength = 13;
-            this.txtCódigoCliente.Name = "txtCódigoCliente";
-            this.txtCódigoCliente.Size = new System.Drawing.Size(175, 26);
-            this.txtCódigoCliente.TabIndex = 127;
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.label3.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.label3.Location = new System.Drawing.Point(48, 423);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(166, 19);
-            this.label3.TabIndex = 128;
-            this.label3.Text = "Codigo del cliente:";
             // 
             // Vender
             // 

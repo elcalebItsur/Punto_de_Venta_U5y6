@@ -28,12 +28,14 @@
             this.btnModificarCli = new System.Windows.Forms.PictureBox();
             this.btnAniadir = new System.Windows.Forms.PictureBox();
             this.f = new System.Windows.Forms.Label();
+            this.btnRecargarVentana = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.dtclients)).BeginInit();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.btnRegresar)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnBorrarCli)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnModificarCli)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnAniadir)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btnRecargarVentana)).BeginInit();
             this.SuspendLayout();
             // 
             // dtclients
@@ -51,6 +53,7 @@
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.panel1.Controls.Add(this.btnRecargarVentana);
             this.panel1.Controls.Add(this.label4);
             this.panel1.Controls.Add(this.label3);
             this.panel1.Controls.Add(this.btnRegresar);
@@ -175,6 +178,17 @@
             this.f.TabIndex = 117;
             this.f.Text = "Gestión de Clientes";
             // 
+            // btnRecargarVentana
+            // 
+            this.btnRecargarVentana.Image = ((System.Drawing.Image)(resources.GetObject("btnRecargarVentana.Image")));
+            this.btnRecargarVentana.Location = new System.Drawing.Point(646, 18);
+            this.btnRecargarVentana.Name = "btnRecargarVentana";
+            this.btnRecargarVentana.Size = new System.Drawing.Size(39, 38);
+            this.btnRecargarVentana.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.btnRecargarVentana.TabIndex = 135;
+            this.btnRecargarVentana.TabStop = false;
+            this.btnRecargarVentana.Click += new System.EventHandler(this.btnRecargarVentana_Click);
+            // 
             // CRUD_Clients
             // 
             this.ClientSize = new System.Drawing.Size(1161, 599);
@@ -190,6 +204,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.btnBorrarCli)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnModificarCli)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnAniadir)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btnRecargarVentana)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -203,5 +218,6 @@
         private System.Windows.Forms.PictureBox btnBorrarCli;
         private System.Windows.Forms.PictureBox btnModificarCli;
         private System.Windows.Forms.PictureBox btnAniadir;
+        private System.Windows.Forms.PictureBox btnRecargarVentana;
     }
 }

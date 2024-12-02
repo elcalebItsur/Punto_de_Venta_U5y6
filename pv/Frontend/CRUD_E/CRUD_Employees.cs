@@ -133,11 +133,6 @@ namespace pv
             this.Hide();
         }
 
-        private void btnActualizarTabla_Click(object sender, EventArgs e)
-        {
-            LoadData();
-        }
-
         private void label4_Click(object sender, EventArgs e)
         {
 
@@ -156,6 +151,11 @@ namespace pv
         private void label3_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void btnRecargarVentana_Click(object sender, EventArgs e)
+        {
+            LoadData();
         }
     }
 }

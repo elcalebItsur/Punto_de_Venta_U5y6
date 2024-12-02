@@ -116,5 +116,10 @@ namespace pv.Frontend
                 Console.WriteLine(ex.Message);
             }
         }
+
+        private void btnRecargarVentana_Click(object sender, EventArgs e)
+        {
+            LoadData();
+        }
     }
 }

@@ -105,6 +105,7 @@ namespace pv.Frontend.Vistas
             this.panel1.Controls.Add(this.lblhello);
             this.panel1.Controls.Add(this.dtventas);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panel1.ForeColor = System.Drawing.Color.Black;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panel1.Name = "panel1";
