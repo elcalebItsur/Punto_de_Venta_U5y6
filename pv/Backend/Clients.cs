@@ -127,33 +127,36 @@ namespace pv.Backend
         {
             try
             {
-                // preparamos el cmd para que ejecute un store procedure
+                // Abrimos la conexión
                 c.OpenConnection();
                 MySqlCommand cmd = new MySqlCommand("Actualizar_Clientes", c.GetConnection());
                 cmd.CommandType = CommandType.StoredProcedure;
 
-                // le pasamos los parametros
+                // Asignamos parámetros
                 cmd.Parameters.AddWithValue("@p_id", p_id);
                 cmd.Parameters.AddWithValue("@p_nombre", p_nombre);
                 cmd.Parameters.AddWithValue("@p_telefono", p_telefono);
                 cmd.Parameters.AddWithValue("@p_edad", p_edad);
-                cmd.Parameters.AddWithValue("p_sexo", p_sexo);
+                cmd.Parameters.AddWithValue("@p_sexo", p_sexo);
 
-                // ejecutamos el store procedure
-                //cmd.ExecuteNonQuery();
-                Console.WriteLine("Cliente insertado.");
-                return true;
+                // Ejecutamos el procedimiento
+                int rowsAffected = cmd.ExecuteNonQuery();
+
+                // Verificamos si se actualizó
+                return rowsAffected > 0;
             }
             catch (Exception ex)
             {
-                //Console.WriteLine(ex);
+                Console.WriteLine(ex.Message); // Log de errores para depuración
+                return false;
             }
             finally
             {
+                // Cerramos la conexión
                 c.CloseConnection();
             }
-            return false;
         }
+
 
         // borrar cliente con store procedures
         public bool DeleteClient(int id)
