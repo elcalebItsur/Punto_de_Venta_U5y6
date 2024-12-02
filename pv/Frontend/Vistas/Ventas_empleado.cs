@@ -64,5 +64,10 @@ namespace pv.Frontend.Vistas
         {
 
         }
+
+        private void dgvVentasEmpleado_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
     }
 }

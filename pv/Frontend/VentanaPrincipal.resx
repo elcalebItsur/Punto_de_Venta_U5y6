@@ -2005,10 +2005,13 @@
   <metadata name="pictureBox1.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
   </metadata>
+  <metadata name="pictureBox1.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
   <data name="pictureBox1.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAB4AAAAQ4CAYAAADo08FDAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAO
-        wAAADsABataJCQAA/7JJREFUeF7svQeYHFeVvq8ZZWlyznk6TOjJOeegUc6SZctywAabHE00ORiMyTnY
+        vwAADr8BOAVTJAAA/7JJREFUeF7svQeYHFeVvq8ZZWlyznk6TOjJOeegUc6SZctywAabHE00ORiMyTnY
         xthgkwyYZJwjy+b03wz7Y9llF1jWOBu+//3urdtd3V2SFWak6Z7j53mfqq6urq66oceqt845q0rLq1FW
         UaMpr6xdNujzcZ1XRVWdkARUVpN6YQVQVWOXPiHpiO3r+H2qSa1fWETCbVtrqKnzKwKCcFaorQ8KwvLh
         JMZnnY80CIJwAqLnTPz79X7SKAiJR3gMN+qlTy19gSZBEARBEJYdkb/f/HvNZWl5DdIz87FuY6YgCGfI

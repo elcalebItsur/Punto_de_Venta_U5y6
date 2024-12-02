@@ -85,5 +85,10 @@ namespace pv.Frontend.Vistas
         {
 
         }
+
+        private void lblventas_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

@@ -107,6 +107,7 @@
             // 
             // btnRecargarVentana
             // 
+            this.btnRecargarVentana.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnRecargarVentana.Image = ((System.Drawing.Image)(resources.GetObject("btnRecargarVentana.Image")));
             this.btnRecargarVentana.Location = new System.Drawing.Point(1057, 32);
             this.btnRecargarVentana.Name = "btnRecargarVentana";

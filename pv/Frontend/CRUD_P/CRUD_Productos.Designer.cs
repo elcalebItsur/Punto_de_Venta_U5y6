@@ -31,6 +31,7 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(CRUD_Productos));
             this.dgvProductos = new System.Windows.Forms.DataGridView();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.btnRecargarVentana = new System.Windows.Forms.PictureBox();
             this.label4 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
@@ -40,14 +41,13 @@
             this.btnModificarProd = new System.Windows.Forms.PictureBox();
             this.btnAniadirProd = new System.Windows.Forms.PictureBox();
             this.Productos = new System.Windows.Forms.Label();
-            this.btnRecargarVentana = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.dgvProductos)).BeginInit();
             this.panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.btnRecargarVentana)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnRegresar)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnBorrarProd)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnModificarProd)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnAniadirProd)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.btnRecargarVentana)).BeginInit();
             this.SuspendLayout();
             // 
             // dgvProductos
@@ -90,6 +90,18 @@
             this.panel1.Size = new System.Drawing.Size(1200, 680);
             this.panel1.TabIndex = 1;
             this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
+            // 
+            // btnRecargarVentana
+            // 
+            this.btnRecargarVentana.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnRecargarVentana.Image = ((System.Drawing.Image)(resources.GetObject("btnRecargarVentana.Image")));
+            this.btnRecargarVentana.Location = new System.Drawing.Point(1118, 42);
+            this.btnRecargarVentana.Name = "btnRecargarVentana";
+            this.btnRecargarVentana.Size = new System.Drawing.Size(39, 38);
+            this.btnRecargarVentana.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.btnRecargarVentana.TabIndex = 137;
+            this.btnRecargarVentana.TabStop = false;
+            this.btnRecargarVentana.Click += new System.EventHandler(this.btnRecargarVentana_Click);
             // 
             // label4
             // 
@@ -200,17 +212,6 @@
             this.Productos.Text = "Productos";
             this.Productos.Click += new System.EventHandler(this.label1_Click);
             // 
-            // btnRecargarVentana
-            // 
-            this.btnRecargarVentana.Image = ((System.Drawing.Image)(resources.GetObject("btnRecargarVentana.Image")));
-            this.btnRecargarVentana.Location = new System.Drawing.Point(1118, 42);
-            this.btnRecargarVentana.Name = "btnRecargarVentana";
-            this.btnRecargarVentana.Size = new System.Drawing.Size(39, 38);
-            this.btnRecargarVentana.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.btnRecargarVentana.TabIndex = 137;
-            this.btnRecargarVentana.TabStop = false;
-            this.btnRecargarVentana.Click += new System.EventHandler(this.btnRecargarVentana_Click);
-            // 
             // CRUD_Productos
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -226,11 +227,11 @@
             ((System.ComponentModel.ISupportInitialize)(this.dgvProductos)).EndInit();
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.btnRecargarVentana)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnRegresar)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnBorrarProd)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnModificarProd)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnAniadirProd)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.btnRecargarVentana)).EndInit();
             this.ResumeLayout(false);
 
         }

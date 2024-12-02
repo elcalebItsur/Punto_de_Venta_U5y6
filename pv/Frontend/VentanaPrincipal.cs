@@ -165,5 +165,7 @@ namespace pv.Frontend
             abrirFormHoja(new Ventas_trimestre());
             subMenuReportes.Visible = false;
         }
+
+       
     }
 }

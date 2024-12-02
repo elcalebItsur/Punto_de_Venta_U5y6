@@ -158,18 +158,19 @@ namespace pv.Frontend.Vistas
             this.lblventas.AutoSize = true;
             this.lblventas.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblventas.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.lblventas.Location = new System.Drawing.Point(922, 468);
+            this.lblventas.Location = new System.Drawing.Point(758, 473);
             this.lblventas.Name = "lblventas";
             this.lblventas.Size = new System.Drawing.Size(181, 19);
             this.lblventas.TabIndex = 17;
             this.lblventas.Text = "Productos vendidos: ";
+            this.lblventas.Click += new System.EventHandler(this.lblventas_Click);
             // 
             // tbfolio
             // 
             this.tbfolio.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
             this.tbfolio.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tbfolio.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.tbfolio.Location = new System.Drawing.Point(926, 494);
+            this.tbfolio.Location = new System.Drawing.Point(762, 498);
             this.tbfolio.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tbfolio.MaxLength = 9;
             this.tbfolio.Name = "tbfolio";

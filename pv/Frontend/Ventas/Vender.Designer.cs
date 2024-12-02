@@ -114,6 +114,7 @@
             // btnadd
             // 
             this.btnadd.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
+            this.btnadd.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnadd.Enabled = false;
             this.btnadd.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnadd.Location = new System.Drawing.Point(59, 158);
@@ -128,6 +129,7 @@
             // btndelete
             // 
             this.btndelete.BackColor = System.Drawing.Color.Red;
+            this.btndelete.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btndelete.Enabled = false;
             this.btndelete.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btndelete.Location = new System.Drawing.Point(59, 264);
@@ -165,6 +167,7 @@
             // btnventa
             // 
             this.btnventa.BackColor = System.Drawing.Color.Lime;
+            this.btnventa.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnventa.Enabled = false;
             this.btnventa.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnventa.Location = new System.Drawing.Point(59, 474);
@@ -324,6 +327,7 @@
             // cbpago
             // 
             this.cbpago.BackColor = System.Drawing.SystemColors.ActiveBorder;
+            this.cbpago.Cursor = System.Windows.Forms.Cursors.Hand;
             this.cbpago.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cbpago.FormattingEnabled = true;
             this.cbpago.Items.AddRange(new object[] {

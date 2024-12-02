@@ -51,6 +51,7 @@
             this.dgvVentasEmpleado.RowTemplate.Height = 28;
             this.dgvVentasEmpleado.Size = new System.Drawing.Size(486, 449);
             this.dgvVentasEmpleado.TabIndex = 1;
+            this.dgvVentasEmpleado.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvVentasEmpleado_CellContentClick);
             // 
             // panel1
             // 
