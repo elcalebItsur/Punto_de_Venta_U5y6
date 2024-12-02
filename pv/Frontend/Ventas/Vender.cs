@@ -73,9 +73,10 @@ namespace pv.Frontend.Ventas
         {
             try
             {
-                if (!Regex.Match(tbcod.Text, @"^\d{13}$").Success)
+                // Validar que el código tenga entre 8 y 20 caracteres y sea alfanumérico
+                if (!Regex.Match(tbcod.Text, @"^[a-zA-Z0-9]{8,20}$").Success)
                 {
-                    MessageBox.Show("El código debe contener solo dígitos y exactamente 13.");
+                    MessageBox.Show("El código debe ser alfanumérico y tener entre 8 y 20 caracteres.");
                 }
                 else
                 {
@@ -117,11 +118,13 @@ namespace pv.Frontend.Ventas
                     ActualizarTotales();
                 }
             }
-            catch(Exception ex)
+            catch (Exception ex)
             {
                 Console.WriteLine(ex);
             }
         }
+
+
 
         private void dtventa_CellValidating(object sender, DataGridViewCellValidatingEventArgs e)
         {
@@ -319,6 +322,7 @@ namespace pv.Frontend.Ventas
 
                     if (x)
                     {
+                        MessageBox.Show("¡Venta realizada con éxito!");
                         this.Hide();
                         VentanaPrincipal m = new VentanaPrincipal();
                         m.Show();

@@ -16,16 +16,16 @@ namespace pv.Frontend
             // se validan los datos del tbx y cuando se hace, se decide si insertarse o no el cliente, llamando al método insertclient para lo primero
             try
             {   
-                Clients clientHandler = new Clients();
+                Clients clienteNuevo = new Clients();
                 string nombre = tbname.Text.Trim();
                 string telefono = tbphone.Text.Trim();
                 int edad = Convert.ToInt32(tbage.Text.Trim());
                 string sexo = rbmale.Checked ? "M" : "F";
 
-                string val = clientHandler.validar_cliente(nombre, telefono, edad.ToString(), sexo);
+                string val = clienteNuevo.validar_cliente(nombre, telefono, edad.ToString(), sexo);
                 if (val == "OK")
                 {
-                    bool result = clientHandler.InsertClient(nombre, telefono, edad, sexo);
+                    bool result = clienteNuevo.InsertClient(nombre, telefono, edad, sexo);
 
                     if (result)
                     {
@@ -49,17 +49,11 @@ namespace pv.Frontend
             }
         }
 
-        // cambiar de form
-        private void btnback_Click(object sender, EventArgs e)
-        {
-            this.Hide();
-        }
-
         private void Create_Clients_Load(object sender, EventArgs e)
         {
 
         }
-
+        // cambiar de form
         private void btnRegresar_Click(object sender, EventArgs e)
         {
             this.Hide();

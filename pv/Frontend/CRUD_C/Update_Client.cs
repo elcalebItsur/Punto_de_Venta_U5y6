@@ -35,16 +35,16 @@ namespace pv.Frontend
         {
             try
             {
-                Clients clientHandler = new Clients();
+                Clients cliente = new Clients();
                 string nombre = tbname.Text.Trim();
                 string telefono = tbphone.Text.Trim();
                 int edad = Convert.ToInt32(tbage.Text.Trim());
                 string sexo = rbmale.Checked ? "M" : "F";
 
-                string val = clientHandler.validar_cliente(nombre, telefono, edad.ToString(), sexo);
+                string val = cliente.validar_cliente(nombre, telefono, edad.ToString(), sexo);
                 if (val == "OK")
                 {
-                    bool result = clientHandler.UpdateClient(id, nombre, telefono, edad, sexo);
+                    bool result = cliente.UpdateClient(id, nombre, telefono, edad, sexo);
 
                     if (result)
                     {
